@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 5bb5ad6a66ee0884689fa675e020b9ba
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Kim jung chul Gothic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b569ed9b3b35466429cc172b6763db5a, type: 3}
+  - {fileID: 12800000, guid: 91b4a94cba8232a488422c7001d79882, type: 3}
+  - {fileID: 12800000, guid: e4e9a66420175e84a8539587bf0d9fbb, type: 3}
+  - {fileID: 12800000, guid: 397c3ea89398fdf4287622bf8cc591a1, type: 3}
+  - {fileID: 12800000, guid: f62832294b5019240afe24329183c24e, type: 3}
+  - {fileID: 12800000, guid: 02285d5e9cce6dc44a1fe10286303444, type: 3}
+  - {fileID: 12800000, guid: 555f33c097baee849af2d29c1e24b261, type: 3}
+  - {fileID: 12800000, guid: 326f62b9d31d7db4b87df31adb8cd4e7, type: 3}
+  - {fileID: 12800000, guid: d69c96a383de69d459e58b9a6f1ee7f5, type: 3}
+  - {fileID: 12800000, guid: 292393c8fb053544090dc52621823948, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

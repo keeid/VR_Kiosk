@@ -1,0 +1,35 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
+
+public class OutLineComponenet : MonoBehaviour
+{
+    public Outline outline = null;
+
+    private void Start()
+    {
+        InitOutLine();
+    }
+
+    // æ∆øÙ∂Û¿Œ √ ±‚»≠
+    private void InitOutLine()
+    {
+        outline = gameObject.AddComponent<Outline>();
+        outline.OutlineMode = Outline.Mode.OutlineVisible;
+        outline.OutlineColor = new Color(0, 0, 0, 0);
+        outline.OutlineWidth = 5;
+    }
+
+    // æ∆øÙ∂Û¿Œ ƒ—±‚
+    public void OnOutline()
+    {
+        outline.OutlineColor = Color.red;
+    }
+
+    // æ∆øÙ∂Û¿Œ ≤Ù±‚
+    public void OffOutline()
+    {
+        outline.OutlineColor = new Color(0, 0, 0, 0);
+    }
+}
