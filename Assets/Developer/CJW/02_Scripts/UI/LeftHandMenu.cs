@@ -112,6 +112,7 @@ public class LeftHandMenu : MonoBehaviour
         moveToKiosk.SetActive(false);
         options.SetActive(false);
         quit.SetActive(false);
+        mainMenu.SetActive(false);
     }
 
     // 계산대로 이동 패널만 활성화
@@ -121,6 +122,7 @@ public class LeftHandMenu : MonoBehaviour
         moveToKiosk.SetActive(true);
         options.SetActive(false);
         quit.SetActive(false);
+        mainMenu.SetActive(false);
     }
 
     // 옵션 메뉴만 활성화
@@ -130,6 +132,7 @@ public class LeftHandMenu : MonoBehaviour
         moveToKiosk.SetActive(false);
         options.SetActive(true);
         quit.SetActive(false);
+        mainMenu.SetActive(false);
     }
 
     // 종료 메뉴만 활성화
@@ -139,6 +142,7 @@ public class LeftHandMenu : MonoBehaviour
         moveToKiosk.SetActive(false);
         options.SetActive(false);
         quit.SetActive(true);
+        mainMenu.SetActive(false);
     }
 
     // 계산대로 이동
