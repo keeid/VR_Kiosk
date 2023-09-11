@@ -133,18 +133,34 @@ public class UIManager : MonoBehaviour
             case 0:
                 ActivePanel(MainMissionPanel, false, 0.5f);
                 MainMissionText.text = "상품을 바구니에 담으세요.";
+                break;
 
-                break;
-            case 3:                break;
             case 1:
-                MainMissionText.text = "키오스크로 이동 하세요.";
+                ActivePanel(MainMissionPanel, false, 0.5f);
+                UnActivePanel(ProductPanel, 0f);
+                MainMissionText.text = $"{MissionManager.Instance.KioskNum}번 계산대 이동 하세요.";
                 break;
+
             case 2:
+                ActivePanel(MainMissionPanel, false, 0.5f);
                 MainMissionText.text = "장바구니 올리기.";
+                break;
+
+            case 3:
+                SettingProductPanel();
+                ActivePanel(MainMissionPanel, false, 0.5f);
+                ActivePanel(ProductPanel, true, unactiveSec);
                 MainMissionText.text = "상품 스캔하기.";
                 break;
+
             case 4:
+                ActivePanel(MainMissionPanel, false, 0.5f);
                 MainMissionText.text = "상품 결제하기.";
+                break;
+                
+            case 5:
+                ActivePanel(MainMissionPanel, true, 0.5f);
+                MainMissionText.text = "미션성공";
                 break;
         }
     }
