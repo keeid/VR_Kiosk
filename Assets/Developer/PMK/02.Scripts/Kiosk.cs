@@ -23,6 +23,10 @@ public class ScannedProduct
         m_productInfo = info;
         count = 0;
         content = gameObj;
+        productContentText = gameObj.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        productCountText = gameObj.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+        productPriceText = gameObj.transform.GetChild(2).GetComponent<TextMeshProUGUI>();
+        productListCountText = gameObj.transform.GetChild(3).GetComponent<TextMeshProUGUI>();
         AddCount(info, 1);
     }
 
@@ -51,11 +55,12 @@ public class ScannedProduct
             m_productInfo = info;
         }
         count += buttonCount;
+        Debug.Log(productContentText);
         productContentText.text = info.productName;
         productCountText.text = count.ToString();
         productPriceText.text = (info.price * count).ToString();
         Kiosk.instance.ReWriteSumText(info.price * buttonCount);
-        Kiosk.instance.ReWriteSumText(buttonCount);
+        Kiosk.instance.RewriteCountSum(buttonCount);
     }
 
     public void ResetListIndex()
@@ -105,9 +110,24 @@ public class Kiosk : MonoBehaviour
     }
 
     #region Kiosk System
-    // 스캐너로 상품을 인식하는 함수
+    // 키오스크 시스템 초기화
+    public void InitKioskSystem()
+    {
+        for(int i = 0; i < paymentViewPortTr.childCount; i++)
+        {
+            Destroy(paymentViewPortTr.GetChild(i).gameObject);
+        }
+        scannedProducts.Clear();
+        priceSum = 0;
+        countSum = 0;
+        prePurchasedProductCol = null;
+        priceSumText.text = "";
+        countSumText.text = "";
+    }
 
     public Transform scannerRayTr = null;
+
+    // 스캐너로 상품을 인식하는 함수
     private void DetectProduct()
     {
         if (KioskUI.instance.kioskPanelIndex == 1)
@@ -140,14 +160,29 @@ public class Kiosk : MonoBehaviour
 
     public void SubtractProduct()
     {
-        var selectedProduct = productToggleGroup.ActiveToggles().FirstOrDefault();
-        scannedProducts.Where(x => x.Item1 == selectedProduct.name).First().Item3.SubProductCount();
+        var selectedProduct = productToggleGroup.GetFirstActiveToggle();
+        Debug.Log(selectedProduct);
+        foreach (var item in scannedProducts)
+        {
+            Debug.Log(item);
+        }
+        Debug.Log(selectedProduct.transform.GetChild(0).name);
+        Debug.Log(scannedProducts.First().Item1);
+        scannedProducts.Where(x => x.Item1 == selectedProduct.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text).First().Item3.SubProductCount();
+
     }
 
     public void PlusProduct()
     {
-        var selectedProduct = productToggleGroup.ActiveToggles().FirstOrDefault();
-        scannedProducts.Where(x=> x.Item1 == selectedProduct.name).First().Item3.AddProductCount();
+        var selectedProduct = productToggleGroup.GetFirstActiveToggle();
+        Debug.Log(selectedProduct);
+        foreach (var item in scannedProducts)
+        {
+            Debug.Log(item);
+        }
+        Debug.Log(selectedProduct.transform.GetChild(0).name);
+        Debug.Log(scannedProducts.First().Item1);
+        scannedProducts.Where(x => x.Item1 == selectedProduct.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text).First().Item3.AddProductCount();
     }
 
     public void DeleteProduct()
@@ -158,10 +193,10 @@ public class Kiosk : MonoBehaviour
     // 상품 0개 이하로 떨어지면 콘텐츠(상품 리스트 UI 텍스트 & -, +버튼) 삭제
     public void DeleteProductInList(ProductInfo info = null, GameObject content = null)
     {
-        if(info == null && content == null)
+        if (info == null && content == null)
         {
-            var selectedProduct = productToggleGroup.ActiveToggles().FirstOrDefault();
-            var scannedProduct = scannedProducts.Where(x => x.Item1 == selectedProduct.name).First();
+            var selectedProduct = productToggleGroup.GetFirstActiveToggle();
+            var scannedProduct = scannedProducts.Where(x => x.Item1 == selectedProduct.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text).First();
             scannedProduct.Item3.SubProductCount(-scannedProduct.Item3.count);
             return;
         }
@@ -169,7 +204,7 @@ public class Kiosk : MonoBehaviour
         scannedProducts.Remove(scannedProducts.Where(x => x.Item1 == info.productName).First() as System.Tuple<string, int, ScannedProduct>);
         scannedProducts = scannedProducts.Where(x => x != null).ToList();
 
-        foreach(var item in scannedProducts)
+        foreach (var item in scannedProducts)
         {
             item.Item3.ResetListIndex();
         }
@@ -188,11 +223,14 @@ public class Kiosk : MonoBehaviour
         {
             GameObject productContent = Instantiate(paymentContent, paymentViewPortTr);
             productContent.GetComponent<Toggle>().group = paymentViewPortTr.GetComponent<ToggleGroup>();
-            productContent.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = productInfo.productName + " : " + productInfo.price + " : 1개";
+            //productContent.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = productInfo.productName + " : " + productInfo.price + " : 1개";
+            productContent.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = productInfo.productName;
+            Debug.Log("AddProduct" + productInfo + "," + productContent);
             //transform.rotation = new Quaternion(10, 30, 40);
             // 추출한 정보를 이용하여 다른 기능 수행
             scannedProducts.Add(new Tuple<string, int, ScannedProduct>(productInfo.productName, productInfo.price,
                 new ScannedProduct(productInfo, productContent)));
+
         }
     }
 

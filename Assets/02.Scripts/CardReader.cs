@@ -11,7 +11,7 @@ public class CardReader : MonoBehaviour
         instance = this;
     }
 
-    private void OnTriggerStay(Collider other)
+    /*private void OnTriggerStay(Collider other)
     {
         var product = other.GetComponent<Product>();
         if (product != null)
@@ -36,23 +36,24 @@ public class CardReader : MonoBehaviour
             }
         }
     }
-
+*/
     public void OnOffCardReaderCollider(bool enable)
     {
         transform.GetComponent<Collider>().enabled = enable;
     }
 
     // 카드 넣기
-    public void InsertCard(Collider col)
+    public void InsertCard()
     {
+        KioskUI.instance.ChangeKioskPage(1);
         if (transform.childCount == 0)
         {
-            Debug.Log("1");
+            Debug.Log("1");/*
             col.isTrigger = true;
             col.gameObject.transform.parent = this.transform;
             col.GetComponent<Rigidbody>().isKinematic = true;
             col.gameObject.transform.localPosition = Vector3.zero;
-            col.gameObject.transform.localRotation = Quaternion.identity;
+            col.gameObject.transform.localRotation = Quaternion.identity;*/
             // 결제 진행 중입니다 표시
             KioskUI.instance.ChangeKioskPage(1);
             //cardObj.transform.DOMoveZ(-0.05f, 3f).SetEase(Ease.Linear);
@@ -60,12 +61,13 @@ public class CardReader : MonoBehaviour
     }
 
     // 카드 회수
-    public void RetrieveCard(Collider col)
+    public void RetrieveCard()
     {
+        KioskUI.instance.ChangeKioskPage(1);
+
         if (KioskUI.instance.kioskPanelIndex == 3 && transform.childCount == 0)
         {
             Debug.Log("2");
-            KioskUI.instance.ChangeKioskPage(1);
         }
         /*cardObj.GetComponent<Collider>().isTrigger = false;
         cardObj.transform.DOMoveZ(0.05f, 3f).SetEase(Ease.Linear);*/
