@@ -17,7 +17,7 @@ public class MissionManager : MonoBehaviour
 
     // Mission Info - Product
     public int typeCnt { get; private set; } // 담아야 하는 상품의 종류 수 2 ~ 3
-
+    
     public ProductInfo[] missionProducts = null;
     public int[] missionProductCnt = null;
 
@@ -28,25 +28,82 @@ public class MissionManager : MonoBehaviour
     public int[] currentProductCnt;
 
     // Step Info
-
+    private bool isStepUp = false;
     public int Step { get; private set; }
 
-
-    private int productFinishCnt;
+    // Go To Kiosk
+    public int KioskNum { get; private set; }
+    private Vector3 missionKisokPos;
 
     // Time Info
     public float Timer { get; private set; }
+
 
     private void Awake()
     {
         instance = this;
         Step = 0;
-        InitSetting();
+        InitSetting0();
     }
     private void Update()
     {
-        Timer += Time.deltaTime;    
+        Timer += Time.deltaTime;
+        switch (Step)
+        {
+                case 1:
+                if (isStepUp) InitSetting1();
+                missionUpdate1();
+                break;
+        }
     }
+    #region InitSetting - Step0 장바구니에 담기
+    private void InitSetting0()
+    {
+        // Set Cnt
+        typeCnt = Random.Range(2, 4);
+
+        productSelectNums = new int[typeCnt];
+
+        missionProducts = new ProductInfo[typeCnt]; // 담아야 하는 상품의 종류 리스트
+        missionProductCnt = new int[typeCnt];       // 상품 당 담아야 하는 개수 
+        currentProductCnt = new int[typeCnt];       // 현재 상품 당 담긴 개수
+
+        productSelectNums = GetNumber(products.Count);  // 담아야 하는 상품의 번호 리스트
+
+        for (int i = 0; i < typeCnt; i++)
+        {
+            missionProducts[i] = products[productSelectNums[i]];
+            missionProductCnt[i] = Random.Range(1, 4);
+            Debug.Log($"미션 상품 : {missionProducts[i]} , 개수 : {missionProductCnt[i]}");
+        }
+    }
+    private int[] GetNumber(int productsCount)
+    {
+        int[] numbers = new int[productsCount];
+        int[] selectNum = new int[typeCnt];
+        Debug.Log($"등록된 상품의 개수 : {productsCount}");
+
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            numbers[i] = i;
+        }
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            int randomNum = Random.Range(i, numbers.Length);
+            int temp = numbers[i];
+            numbers[i] = numbers[randomNum];
+            numbers[randomNum] = temp;
+        }
+        for (int i = 0; i < typeCnt; i++)
+        {
+            selectNum[i] = numbers[i];
+        }
+        Debug.Log($"뽑힌 순번은 : {selectNum}");
+        return selectNum;
+    }
+    #endregion
+    
+    #region Step0
     public void AddProcut(Collider productColl)
     {
         string name;
@@ -97,59 +154,102 @@ public class MissionManager : MonoBehaviour
             NextStep();
         }
     }
+    #endregion
 
-    #region InitSetting
-    private void InitSetting()
+    #region Step1 키오스크로 이동
+    private void InitSetting1()
     {
-        // Set Cnt
-        typeCnt = Random.Range(2, 4);
-
-        productSelectNums = new int[typeCnt];
-
-        missionProducts = new ProductInfo[typeCnt]; // 담아야 하는 상품의 종류 리스트
-        missionProductCnt = new int[typeCnt];       // 상품 당 담아야 하는 개수 
-        currentProductCnt = new int[typeCnt];       // 현재 상품 당 담긴 개수
-
-        productSelectNums = GetNumber(products.Count);  // 담아야 하는 상품의 번호 리스트
-
-        for (int i = 0; i < typeCnt; i++)
+        isStepUp = false;
+        KioskNum = Random.Range(1, 4); //1~3
+        switch (KioskNum)
         {
-            missionProducts[i] = products[productSelectNums[i]];
-            missionProductCnt[i] = Random.Range(1, 4);
-            Debug.Log($"미션 상품 : {missionProducts[i]} , 개수 : {missionProductCnt[i]}");
+            case 1:
+                missionKisokPos = Vector3.zero;
+                break;
+            
+            case 2:
+                missionKisokPos = Vector3.zero;
+                break;
+         
+            case 3:
+                missionKisokPos = Vector3.zero;
+                break;
         }
     }
-    private int[] GetNumber(int productsCount)
-    {
-        int[] numbers = new int[productsCount];
-        int[] selectNum = new int[typeCnt];
-        Debug.Log($"등록된 상품의 개수 : {productsCount}");
 
-        for (int i = 0; i < numbers.Length; i++)
+    private void missionUpdate1()
+    {
+        Collider[] colls = Physics.OverlapBox(missionKisokPos, Vector3.one, Quaternion.identity);
+        if (colls.Length != 0)
         {
-            numbers[i] = i;
+            foreach (Collider coll in colls)
+            {
+                if(coll.CompareTag("Player"))
+                {
+                    NextStep();
+                }
+            }
         }
-        for (int i = 0; i < numbers.Length; i++)
-        {
-            int randomNum = Random.Range(i, numbers.Length);
-            int temp = numbers[i];
-            numbers[i] = numbers[randomNum];
-            numbers[randomNum] = temp;
-        }
-        for (int i = 0; i < typeCnt; i++)
-        {
-            selectNum[i] = numbers[i];
-        }
-        Debug.Log($"뽑힌 순번은 : {selectNum}");
-        return selectNum;
     }
     #endregion
 
+    // Step2 - 장바구니 올리기는 너무 간단 해 NextStep으로 패스
+
+    #region Step3 - 상품 스캔하기
+    private void InitSetting3()
+    {
+        for (int i = 0; i < currentProductCnt.Length; i++)
+        {
+            currentProductCnt[i] = 0;
+        }
+    }
+    // 스캔 상품은 AddProduct
+
+    public void AddProductInKiosk(ProductInfo info)
+    {
+        string name;
+        if (info != null)
+        {
+            name = info.productName;
+            for (int i = 0; i < missionProducts.Length; i++)
+            {
+                Debug.Log($"체크체크 {missionProducts[i].productName} : {name}");
+                if (missionProducts[i].productName == name)
+                {
+                    currentProductCnt[i]++;
+                    CheckCnt(missionProducts[i], i);
+                }
+                i++;
+            }
+        }
+    }
+    public void RemoveProductInKiosk(ProductInfo info)
+    {
+        string name;
+        if (info != null)
+        {
+            name = info.productName;
+            for (int i = 0; i < missionProducts.Length; i++)
+            {
+                Debug.Log($"체크 체크 {missionProducts[i].productName} : {name}");
+                if (missionProducts[i].productName == name)
+                {
+                    currentProductCnt[i]--;
+                    CheckCnt(missionProducts[i], i);
+                }
+                i++;
+            }
+        }
+    }
+    #endregion
+
+    //Step4 간단해 NextStep으로 패스
     #region Step
     public void NextStep()
     {
         Step++;
         UIManager.Instance.isTaskInfo = true;
+        isStepUp = true;
     }
     #endregion
 }
