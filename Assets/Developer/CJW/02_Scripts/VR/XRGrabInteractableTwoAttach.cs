@@ -82,10 +82,10 @@ public class XRGrabInteractableTwoAttach : XRGrabInteractable
         var product = tr.parent.GetComponent<Product>();
         switch (product.productInfo.objType)
         {
-            case ProductInfo.ObjectType.nonProduct:
+            case Define.ObjectType.nonProduct:
                 product.isGrabed = !product.isGrabed;
                 break;
-            case ProductInfo.ObjectType.Product:
+            case Define.ObjectType.Product:
                 product.isGrabed = !product.isGrabed;
                 product.isInCart = false;
                 if (product.isInCart == false)

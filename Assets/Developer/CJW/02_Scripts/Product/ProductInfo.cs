@@ -7,12 +7,8 @@ using UnityEngine;
 public class ProductInfo : ScriptableObject
 {
     public string productName;
-    public int price;
     public string barcode;
-    public ObjectType objType;
-    public enum ObjectType
-    {
-        nonProduct,
-        Product
-    }
+    public int price;
+    public Define.ObjectType objType;
+    public Define.Category category;
 }
