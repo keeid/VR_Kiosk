@@ -144,7 +144,7 @@ public class Kiosk : MonoBehaviour
                     // 상품 정보 스크립터블 오브젝트를 가져와서 해당 상품의 정보를 추출
                     ProductInfo productInfo = hit.collider.gameObject.GetComponent<Product>().productInfo;
 
-
+                    MissionManager.Instance.AddProductInKiosk(productInfo);
                     AddProduct(productInfo);
 
                     // 가장 최근에 등록된 상품으로 저장
@@ -166,10 +166,11 @@ public class Kiosk : MonoBehaviour
         {
             Debug.Log(item);
         }
-        Debug.Log(selectedProduct.transform.GetChild(0).name);
+        Debug.Log(selectedProduct.transform.name);
         Debug.Log(scannedProducts.First().Item1);
-        scannedProducts.Where(x => x.Item1 == selectedProduct.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text).First().Item3.SubProductCount();
-
+        var product = scannedProducts.Where(x => x.Item1 == selectedProduct.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text).First();
+        product.Item3.SubProductCount();
+        MissionManager.Instance.RemoveProductInKiosk(product.Item3.m_productInfo);
     }
 
     public void PlusProduct()
@@ -180,9 +181,11 @@ public class Kiosk : MonoBehaviour
         {
             Debug.Log(item);
         }
-        Debug.Log(selectedProduct.transform.GetChild(0).name);
+        Debug.Log(selectedProduct.transform.name);
         Debug.Log(scannedProducts.First().Item1);
-        scannedProducts.Where(x => x.Item1 == selectedProduct.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text).First().Item3.AddProductCount();
+        var product = scannedProducts.Where(x => x.Item1 == selectedProduct.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text).First();
+        product.Item3.AddProductCount();
+        MissionManager.Instance.AddProductInKiosk(product.Item3.m_productInfo);
     }
 
     public void DeleteProduct()
@@ -222,7 +225,7 @@ public class Kiosk : MonoBehaviour
         else
         {
             GameObject productContent = Instantiate(paymentContent, paymentViewPortTr);
-            productContent.GetComponent<Toggle>().group = paymentViewPortTr.GetComponent<ToggleGroup>();
+            productContent.GetComponent<Toggle>().group = productToggleGroup;
             //productContent.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = productInfo.productName + " : " + productInfo.price + " : 1개";
             productContent.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = productInfo.productName;
             Debug.Log("AddProduct" + productInfo + "," + productContent);

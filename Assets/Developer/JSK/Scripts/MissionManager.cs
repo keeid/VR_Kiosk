@@ -23,6 +23,8 @@ public class MissionManager : MonoBehaviour
 
     private int[] productSelectNums;
 
+    private bool isCountable;
+
     // Current Info - Product
     private int trueCnt = 0;
     public int[] currentProductCnt;
@@ -38,6 +40,11 @@ public class MissionManager : MonoBehaviour
     // Time Info
     public float Timer { get; private set; }
 
+    //예비로
+
+    public Transform kioskTr;
+    public Transform playerTr;
+
 
     private void Awake()
     {
@@ -50,9 +57,19 @@ public class MissionManager : MonoBehaviour
         Timer += Time.deltaTime;
         switch (Step)
         {
-                case 1:
+            case 1:
                 if (isStepUp) InitSetting1();
                 missionUpdate1();
+                break;
+            case 2:
+                if (isStepUp) InitSetting2();
+                break;
+            case 3:
+                if (isStepUp) InitSetting3();
+                break;
+            case 4:
+                break;
+            case 5:
                 break;
         }
     }
@@ -60,7 +77,9 @@ public class MissionManager : MonoBehaviour
     private void InitSetting0()
     {
         // Set Cnt
-        typeCnt = Random.Range(2, 4);
+        //typeCnt = Random.Range(2, 4);
+        isCountable = true;
+        typeCnt = 1;
 
         productSelectNums = new int[typeCnt];
 
@@ -73,7 +92,8 @@ public class MissionManager : MonoBehaviour
         for (int i = 0; i < typeCnt; i++)
         {
             missionProducts[i] = products[productSelectNums[i]];
-            missionProductCnt[i] = Random.Range(1, 4);
+            //missionProductCnt[i] = Random.Range(1, 4);
+            missionProductCnt[i] = 1;
             Debug.Log($"미션 상품 : {missionProducts[i]} , 개수 : {missionProductCnt[i]}");
         }
     }
@@ -104,10 +124,14 @@ public class MissionManager : MonoBehaviour
     #endregion
     
     #region Step0
+    private void ChckProduct()
+    {
+
+    }
     public void AddProcut(Collider productColl)
     {
         string name;
-        if (productColl.GetComponent<Product>().productInfo != null)
+        if (productColl.GetComponent<Product>().productInfo != null && isCountable)
         {
             name = productColl.GetComponent<Product>().productInfo.productName;
             for (int i = 0; i < missionProducts.Length; i++)
@@ -125,7 +149,7 @@ public class MissionManager : MonoBehaviour
     public void RemoveProduct(Collider productColl)
     {
         string name;
-        if (productColl.GetComponent<Product>().productInfo != null)
+        if (productColl.GetComponent<Product>().productInfo != null && isCountable)
         {
             name = productColl.GetComponent<Product>().productInfo.productName;
             for (int i = 0; i < missionProducts.Length; i++)
@@ -148,10 +172,15 @@ public class MissionManager : MonoBehaviour
         //여기 하나 추가 예외 1.만약에 이미 최대치면 증가시켜야하나?
         //한번스텝 넘어가면 다음부터는 안넘어간다야
 
-        if (missionProductCnt[num] == currentProductCnt[num]) trueCnt++;
-        if (trueCnt == typeCnt)
+        if(isCountable)
         {
-            NextStep();
+            if (missionProductCnt[num] == currentProductCnt[num]) trueCnt++;
+            if (trueCnt == typeCnt)
+            {
+                isCountable = false;
+                Debug.Log("다음스텝");
+                NextStep();
+            }
         }
     }
     #endregion
@@ -172,6 +201,7 @@ public class MissionManager : MonoBehaviour
                 break;
          
             case 3:
+
                 missionKisokPos = Vector3.zero;
                 break;
         }
@@ -190,14 +220,24 @@ public class MissionManager : MonoBehaviour
                 }
             }
         }
+        if(Vector3.Distance(playerTr.position,kioskTr.position) <= 2f)
+        {
+            NextStep();
+        }
     }
     #endregion
 
     // Step2 - 장바구니 올리기는 너무 간단 해 NextStep으로 패스
-
+    private void InitSetting2()
+    {
+        isStepUp = false;
+        NextStep();
+    }
     #region Step3 - 상품 스캔하기
     private void InitSetting3()
     {
+        isStepUp = false;
+        isCountable = true;
         for (int i = 0; i < currentProductCnt.Length; i++)
         {
             currentProductCnt[i] = 0;

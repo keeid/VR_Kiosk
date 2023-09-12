@@ -23,9 +23,9 @@ public class ProductTrigger : MonoBehaviour
             var product = other.GetComponent<Product>();
             if (product.canInCart && product.isGrabed)
             {
+                MissionManager.Instance.RemoveProduct(other);
                 product.isInCart = false;
                 product.canInCart = false;
-                MissionManager.Instance.RemoveProduct(other);
                 Debug.Log($"{product.transform.name} ³ª°¨");
             }
         }
@@ -47,7 +47,7 @@ public class ProductTrigger : MonoBehaviour
                     product.transform.parent = transform;
                     product.transform.localEulerAngles = Vector3.zero;
                     MissionManager.Instance.AddProcut(other);
-                    product.transform.localPosition = new Vector3(product.transform.localPosition.x, 0.05f, product.transform.localPosition.z);
+                    product.transform.localPosition = new Vector3(product.transform.localPosition.x, 0.07f, product.transform.localPosition.z);
                     product.transform.GetComponent<Rigidbody>().isKinematic = true;
                     Debug.Log($"{product.transform.name} µé¾î¿È");
                     other.GetComponent<Product>().canInCart = false;
@@ -55,7 +55,6 @@ public class ProductTrigger : MonoBehaviour
                 else
                 {
                     other.GetComponent<Product>().canInCart = false;
-
                 }
             }
         }
