@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 4844718}
   - component: {fileID: 4844720}
   - component: {fileID: 4844719}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: StartPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -790,7 +790,7 @@ GameObject:
   - component: {fileID: 76273043}
   - component: {fileID: 76273045}
   - component: {fileID: 76273044}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -925,7 +925,7 @@ GameObject:
   - component: {fileID: 99630389}
   - component: {fileID: 99630388}
   - component: {fileID: 99630387}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -995,7 +995,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 99630388}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 90000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &99630388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1369,7 +1393,7 @@ GameObject:
   - component: {fileID: 118579250}
   - component: {fileID: 118579249}
   - component: {fileID: 118579248}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1439,7 +1463,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 118579249}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ClickNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &118579249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1489,7 +1525,7 @@ GameObject:
   - component: {fileID: 123835070}
   - component: {fileID: 123835072}
   - component: {fileID: 123835071}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1645,7 +1681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3966430307989017086, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.31
+      value: -6.27
       objectReference: {fileID: 0}
     - target: {fileID: 3966430307989017086, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1653,7 +1689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3966430307989017086, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.03
+      value: 5.25
       objectReference: {fileID: 0}
     - target: {fileID: 3966430307989017086, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1730,7 +1766,7 @@ GameObject:
   - component: {fileID: 136703452}
   - component: {fileID: 136703454}
   - component: {fileID: 136703453}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2779,7 +2815,7 @@ GameObject:
   - component: {fileID: 252880290}
   - component: {fileID: 252880292}
   - component: {fileID: 252880291}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3012,7 +3048,7 @@ GameObject:
   - component: {fileID: 267461984}
   - component: {fileID: 267461986}
   - component: {fileID: 267461985}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3209,7 +3245,7 @@ GameObject:
   - component: {fileID: 295802660}
   - component: {fileID: 295802659}
   - component: {fileID: 295802658}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PreButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3279,7 +3315,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 295802659}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &295802659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3330,7 +3378,7 @@ GameObject:
   - component: {fileID: 296182436}
   - component: {fileID: 296182435}
   - component: {fileID: 296182434}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3400,7 +3448,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 296182435}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ClickNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 9
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &296182435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3528,26 +3588,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 307152850}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Script: {fileID: 11500000, guid: ab68ce6587aab0146b8dabefbd806791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MoveRepeatDelay: 0.5
-  m_MoveRepeatRate: 0.1
-  m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_DeselectOnBackgroundClick: 1
-  m_PointerBehavior: 0
-  m_CursorLockBehavior: 0
+  m_ClickSpeed: 0.3
+  m_MoveDeadzone: 0.6
+  m_RepeatDelay: 0.5
+  m_RepeatRate: 0.1
+  m_TrackedDeviceDragThresholdMultiplier: 1.4
+  m_ActiveInputMode: 0
+  m_MaxTrackedDeviceRaycastDistance: 1000
+  m_EnableXRInput: 1
+  m_EnableMouseInput: 1
+  m_EnableTouchInput: 1
+  m_PointAction: {fileID: 2869410428622933342, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_LeftClickAction: {fileID: 1855836014308820768, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_MiddleClickAction: {fileID: -6289560987278519447, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_RightClickAction: {fileID: -2562941478296515153, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_ScrollWheelAction: {fileID: 5825226938762934180, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_NavigateAction: {fileID: -7967456002180160679, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_SubmitAction: {fileID: 3994978066732806534, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_CancelAction: {fileID: 2387711382375263438, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_EnableBuiltinActionsAsFallback: 1
+  m_EnableGamepadInput: 1
+  m_EnableJoystickInput: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
 --- !u!114 &307152852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3971,7 +4039,7 @@ GameObject:
   - component: {fileID: 373126797}
   - component: {fileID: 373126799}
   - component: {fileID: 373126798}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4168,7 +4236,7 @@ GameObject:
   - component: {fileID: 380224419}
   - component: {fileID: 380224418}
   - component: {fileID: 380224417}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4238,7 +4306,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 380224418}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &380224418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4289,7 +4381,7 @@ GameObject:
   - component: {fileID: 381076519}
   - component: {fileID: 381076518}
   - component: {fileID: 381076517}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4359,7 +4451,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 381076518}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 80000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &381076518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4779,7 +4895,7 @@ GameObject:
   - component: {fileID: 403563942}
   - component: {fileID: 403563944}
   - component: {fileID: 403563943}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4914,7 +5030,7 @@ GameObject:
   - component: {fileID: 403863484}
   - component: {fileID: 403863483}
   - component: {fileID: 403863482}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ExButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5134,7 +5250,7 @@ GameObject:
   - component: {fileID: 446862285}
   - component: {fileID: 446862287}
   - component: {fileID: 446862286}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LastGasoilPanel (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5152,6 +5268,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 659323980}
   - {fileID: 682640011}
   m_Father: {fileID: 1212532100}
   m_RootOrder: 13
@@ -5417,7 +5534,7 @@ GameObject:
   - component: {fileID: 471047200}
   - component: {fileID: 471047199}
   - component: {fileID: 471047198}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5487,7 +5604,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 471047199}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ClickNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &471047199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5597,7 +5726,7 @@ GameObject:
   - component: {fileID: 489310163}
   - component: {fileID: 489310162}
   - component: {fileID: 489310161}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PreButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5667,7 +5796,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 489310162}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &489310162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5717,7 +5858,7 @@ GameObject:
   - component: {fileID: 494316035}
   - component: {fileID: 494316037}
   - component: {fileID: 494316036}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5736,7 +5877,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 656853243}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5793,8 +5934,8 @@ GameObject:
   - component: {fileID: 504744937}
   - component: {fileID: 504744936}
   - component: {fileID: 504744935}
-  m_Layer: 0
-  m_Name: NumButton (13)
+  m_Layer: 5
+  m_Name: CheckButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5863,7 +6004,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 504744936}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &504744936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5914,7 +6067,7 @@ GameObject:
   - component: {fileID: 509758245}
   - component: {fileID: 509758244}
   - component: {fileID: 509758243}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5984,7 +6137,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 509758244}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &509758244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6113,7 +6290,7 @@ GameObject:
   - component: {fileID: 520628644}
   - component: {fileID: 520628646}
   - component: {fileID: 520628645}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6829,8 +7006,8 @@ GameObject:
   - component: {fileID: 559014599}
   - component: {fileID: 559014601}
   - component: {fileID: 559014600}
-  m_Layer: 0
-  m_Name: PaymentTypePanel
+  m_Layer: 5
+  m_Name: X_PaymentTypePanel_X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6970,7 +7147,7 @@ GameObject:
   - component: {fileID: 586227822}
   - component: {fileID: 586227824}
   - component: {fileID: 586227823}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7111,7 +7288,7 @@ GameObject:
   - component: {fileID: 587862051}
   - component: {fileID: 587862053}
   - component: {fileID: 587862052}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7491,7 +7668,7 @@ GameObject:
   - component: {fileID: 614450943}
   - component: {fileID: 614450942}
   - component: {fileID: 614450941}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PreButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7869,6 +8046,141 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627959291}
   m_Enabled: 0
+--- !u!1 &634017307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 634017308}
+  - component: {fileID: 634017310}
+  - component: {fileID: 634017309}
+  m_Layer: 5
+  m_Name: "\uC2E0\uC6A9\uCE74\uB4DC \uC120\uD0DD"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &634017308
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634017307}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.00052897463}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1149726008}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00011396408, y: 150.9999}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &634017309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634017307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uC8FC\uC720\uAC00 \uC644\uB8CC\uB420\uB54C\uAE4C\uC9C0 \uACC4\uC18D\uD574\uC11C
+    \uC8FC\uC720\uD574\uC8FC\uC138\uC694"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: aeebdf30854e18c44853e98f118922c2, type: 2}
+  m_sharedMaterial: {fileID: 8345742651438314369, guid: aeebdf30854e18c44853e98f118922c2, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &634017310
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634017307}
+  m_CullTransparentMesh: 1
 --- !u!1001 &635406478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7978,7 +8290,7 @@ GameObject:
   - component: {fileID: 638724458}
   - component: {fileID: 638724460}
   - component: {fileID: 638724459}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8112,7 +8424,7 @@ GameObject:
   - component: {fileID: 656853243}
   - component: {fileID: 656853245}
   - component: {fileID: 656853244}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TakeCardGasoilPanel (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8130,6 +8442,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1344839884}
   - {fileID: 494316035}
   m_Father: {fileID: 1212532100}
   m_RootOrder: 12
@@ -8177,6 +8490,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656853242}
   m_CullTransparentMesh: 1
+--- !u!1 &659323979
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 659323980}
+  - component: {fileID: 659323982}
+  - component: {fileID: 659323981}
+  m_Layer: 5
+  m_Name: "\uC2E0\uC6A9\uCE74\uB4DC \uC120\uD0DD"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &659323980
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659323979}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.00052897463}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 446862285}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00011396408, y: 150.9999}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &659323981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659323979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uB05D"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: aeebdf30854e18c44853e98f118922c2, type: 2}
+  m_sharedMaterial: {fileID: 8345742651438314369, guid: aeebdf30854e18c44853e98f118922c2, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &659323982
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659323979}
+  m_CullTransparentMesh: 1
 --- !u!1 &672375527
 GameObject:
   m_ObjectHideFlags: 0
@@ -8189,7 +8636,7 @@ GameObject:
   - component: {fileID: 672375531}
   - component: {fileID: 672375530}
   - component: {fileID: 672375529}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8259,7 +8706,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 672375530}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ClickNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &672375530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8427,7 +8886,7 @@ GameObject:
   - component: {fileID: 678578581}
   - component: {fileID: 678578583}
   - component: {fileID: 678578582}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8561,7 +9020,7 @@ GameObject:
   - component: {fileID: 682640011}
   - component: {fileID: 682640013}
   - component: {fileID: 682640012}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8580,7 +9039,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 446862285}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8636,7 +9095,7 @@ GameObject:
   - component: {fileID: 683975395}
   - component: {fileID: 683975397}
   - component: {fileID: 683975396}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9805,7 +10264,7 @@ GameObject:
   - component: {fileID: 719873442}
   - component: {fileID: 719873444}
   - component: {fileID: 719873443}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PaymentPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9826,6 +10285,7 @@ RectTransform:
   - {fileID: 1405447658}
   - {fileID: 862010958}
   - {fileID: 1965197027}
+  - {fileID: 1366234142}
   m_Father: {fileID: 1212532100}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9945,7 +10405,7 @@ GameObject:
   - component: {fileID: 733155063}
   - component: {fileID: 733155065}
   - component: {fileID: 733155064}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ExInsertPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10024,7 +10484,7 @@ GameObject:
   - component: {fileID: 735394361}
   - component: {fileID: 735394360}
   - component: {fileID: 735394359}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ExButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10094,7 +10554,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 735394360}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &735394360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10144,7 +10616,7 @@ GameObject:
   - component: {fileID: 743493432}
   - component: {fileID: 743493434}
   - component: {fileID: 743493433}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10278,7 +10750,7 @@ GameObject:
   - component: {fileID: 752553750}
   - component: {fileID: 752553752}
   - component: {fileID: 752553751}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10474,7 +10946,7 @@ GameObject:
   - component: {fileID: 796911535}
   - component: {fileID: 796911537}
   - component: {fileID: 796911536}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PaymentPanel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10493,6 +10965,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2006087402}
+  - {fileID: 1531480823}
   m_Father: {fileID: 1212532100}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10714,8 +11187,8 @@ GameObject:
   - component: {fileID: 807275447}
   - component: {fileID: 807275446}
   - component: {fileID: 807275445}
-  m_Layer: 0
-  m_Name: NumButton (10)
+  m_Layer: 5
+  m_Name: ManButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10784,7 +11257,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 807275446}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: SetPaymentType
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &807275446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10835,7 +11320,7 @@ GameObject:
   - component: {fileID: 815201722}
   - component: {fileID: 815201721}
   - component: {fileID: 815201720}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10905,7 +11390,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 815201721}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ClickNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &815201721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10956,7 +11453,7 @@ GameObject:
   - component: {fileID: 815738080}
   - component: {fileID: 815738079}
   - component: {fileID: 815738078}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PreButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11026,7 +11523,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 815738079}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &815738079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11076,7 +11585,7 @@ GameObject:
   - component: {fileID: 819329553}
   - component: {fileID: 819329555}
   - component: {fileID: 819329554}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11276,7 +11785,7 @@ GameObject:
   - component: {fileID: 836329977}
   - component: {fileID: 836329979}
   - component: {fileID: 836329978}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11440,7 +11949,7 @@ GameObject:
   - component: {fileID: 838378608}
   - component: {fileID: 838378610}
   - component: {fileID: 838378609}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11574,7 +12083,7 @@ GameObject:
   - component: {fileID: 849634380}
   - component: {fileID: 849634382}
   - component: {fileID: 849634381}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11924,7 +12433,7 @@ GameObject:
   - component: {fileID: 860165628}
   - component: {fileID: 860165627}
   - component: {fileID: 860165626}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GasolineButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11994,7 +12503,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 860165627}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: SetOilType
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &860165627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12185,7 +12718,7 @@ GameObject:
   - component: {fileID: 862010961}
   - component: {fileID: 862010960}
   - component: {fileID: 862010959}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CancelButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12255,7 +12788,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 862010960}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &862010960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12304,7 +12849,7 @@ GameObject:
   m_Component:
   - component: {fileID: 868529192}
   - component: {fileID: 868529193}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12386,7 +12931,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &869328554
 Transform:
   m_ObjectHideFlags: 0
@@ -12817,7 +13362,7 @@ GameObject:
   - component: {fileID: 890943160}
   - component: {fileID: 890943159}
   - component: {fileID: 890943158}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: FullButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12937,7 +13482,7 @@ GameObject:
   - component: {fileID: 898181398}
   - component: {fileID: 898181400}
   - component: {fileID: 898181399}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13072,8 +13617,8 @@ GameObject:
   - component: {fileID: 898527437}
   - component: {fileID: 898527436}
   - component: {fileID: 898527435}
-  m_Layer: 0
-  m_Name: NumButton (14)
+  m_Layer: 5
+  m_Name: ClearButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13142,7 +13687,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 898527436}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ClickNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &898527436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13192,7 +13749,7 @@ GameObject:
   - component: {fileID: 902780768}
   - component: {fileID: 902780770}
   - component: {fileID: 902780769}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13388,7 +13945,7 @@ GameObject:
   - component: {fileID: 904458579}
   - component: {fileID: 904458581}
   - component: {fileID: 904458580}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13523,7 +14080,7 @@ GameObject:
   - component: {fileID: 909861811}
   - component: {fileID: 909861810}
   - component: {fileID: 909861809}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13593,7 +14150,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 909861810}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ClickNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &909861810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13644,7 +14213,7 @@ GameObject:
   - component: {fileID: 911473285}
   - component: {fileID: 911473284}
   - component: {fileID: 911473283}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13714,7 +14283,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 911473284}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ClickNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &911473284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13888,7 +14469,7 @@ GameObject:
   - component: {fileID: 925545997}
   - component: {fileID: 925545999}
   - component: {fileID: 925545998}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14265,7 +14846,7 @@ GameObject:
   - component: {fileID: 946343185}
   - component: {fileID: 946343184}
   - component: {fileID: 946343183}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14335,7 +14916,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 946343184}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &946343184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14565,7 +15170,7 @@ GameObject:
   - component: {fileID: 963984714}
   - component: {fileID: 963984716}
   - component: {fileID: 963984715}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14699,7 +15304,7 @@ GameObject:
   - component: {fileID: 987515338}
   - component: {fileID: 987515340}
   - component: {fileID: 987515339}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15369,7 +15974,7 @@ GameObject:
   - component: {fileID: 1040613856}
   - component: {fileID: 1040613858}
   - component: {fileID: 1040613857}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15504,7 +16109,7 @@ GameObject:
   - component: {fileID: 1048480671}
   - component: {fileID: 1048480670}
   - component: {fileID: 1048480669}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: WonButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15574,7 +16179,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1048480670}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: SetPaymentType
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1048480670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15624,7 +16241,7 @@ GameObject:
   - component: {fileID: 1056634304}
   - component: {fileID: 1056634306}
   - component: {fileID: 1056634305}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15829,8 +16446,8 @@ GameObject:
   - component: {fileID: 1065584549}
   - component: {fileID: 1065584548}
   - component: {fileID: 1065584547}
-  m_Layer: 0
-  m_Name: NumButton (12)
+  m_Layer: 5
+  m_Name: 'LitterButton '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15899,7 +16516,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1065584548}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: SetPaymentType
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1065584548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16047,7 +16676,7 @@ GameObject:
   - component: {fileID: 1075253218}
   - component: {fileID: 1075253220}
   - component: {fileID: 1075253219}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GasoilPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16066,8 +16695,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 586227822}
+  - {fileID: 1493432776}
   m_Father: {fileID: 1212532100}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -16241,7 +16871,7 @@ GameObject:
   - component: {fileID: 1077644873}
   - component: {fileID: 1077644875}
   - component: {fileID: 1077644874}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16482,6 +17112,140 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6c749124a04d7c745ada192ccdffd81e, type: 3}
   m_PrefabInstance: {fileID: 1078436877}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1089354086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1089354087}
+  - component: {fileID: 1089354089}
+  - component: {fileID: 1089354088}
+  m_Layer: 5
+  m_Name: Number_Text (TMP) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1089354087
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089354086}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1538122410}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 141.45, y: 0}
+  m_SizeDelta: {x: 68.5, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1089354088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089354086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uC6D0"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: aeebdf30854e18c44853e98f118922c2, type: 2}
+  m_sharedMaterial: {fileID: 8345742651438314369, guid: aeebdf30854e18c44853e98f118922c2, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1089354089
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089354086}
+  m_CullTransparentMesh: 1
 --- !u!1 &1111533823
 GameObject:
   m_ObjectHideFlags: 0
@@ -16493,7 +17257,7 @@ GameObject:
   - component: {fileID: 1111533824}
   - component: {fileID: 1111533826}
   - component: {fileID: 1111533825}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16628,7 +17392,7 @@ GameObject:
   - component: {fileID: 1121715244}
   - component: {fileID: 1121715243}
   - component: {fileID: 1121715242}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CancelButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16698,7 +17462,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1121715243}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1121715243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16752,7 +17528,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1127843308
 Transform:
   m_ObjectHideFlags: 0
@@ -16783,7 +17559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1146960112}
   - component: {fileID: 1146960113}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16854,7 +17630,7 @@ GameObject:
   - component: {fileID: 1149726008}
   - component: {fileID: 1149726010}
   - component: {fileID: 1149726009}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: KeepGasoilPanel (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16873,6 +17649,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1415212276}
+  - {fileID: 634017308}
   m_Father: {fileID: 1212532100}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16930,7 +17707,7 @@ GameObject:
   - component: {fileID: 1160635914}
   - component: {fileID: 1160635916}
   - component: {fileID: 1160635915}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17065,7 +17842,7 @@ GameObject:
   - component: {fileID: 1185670695}
   - component: {fileID: 1185670694}
   - component: {fileID: 1185670693}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CardButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17135,7 +17912,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1185670694}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1185670694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17433,7 +18234,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3966430307988749492, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
       propertyPath: m_Name
-      value: Car (2)
+      value: _Car (2)
       objectReference: {fileID: 0}
     - target: {fileID: 3966430307989017086, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
       propertyPath: m_RootOrder
@@ -17441,7 +18242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3966430307989017086, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.492
+      value: -3.841
       objectReference: {fileID: 0}
     - target: {fileID: 3966430307989017086, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17449,7 +18250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3966430307989017086, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.314
+      value: 6.702
       objectReference: {fileID: 0}
     - target: {fileID: 3966430307989017086, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17487,6 +18288,54 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8d530ffe6c4968843806085897955b9d, type: 2}
+    - target: {fileID: 3966430308756409874, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966430308756409874, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
+      propertyPath: m_InteractableHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 100c46f78b0c0d646877890d4ac07a4b, type: 2}
+    - target: {fileID: 3966430308756409874, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
+      propertyPath: m_InteractableCantHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 955ac322689d450418f932d95368d3ce, type: 2}
+    - target: {fileID: 3966430308756409874, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966430308756409874, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966430308756409874, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966430308756409874, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 919132148970914939}
+    - target: {fileID: 3966430308756409874, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966430308756409874, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966430308756409874, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartInputOil
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966430308756409874, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GasStationKiosk, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966430308756409874, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 273af65143d9f4144adfb902d6577c14, type: 3}
 --- !u!4 &1199487067 stripped
@@ -17506,7 +18355,7 @@ GameObject:
   - component: {fileID: 1212532103}
   - component: {fileID: 1212532102}
   - component: {fileID: 1212532101}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17533,8 +18382,8 @@ RectTransform:
   - {fileID: 719873442}
   - {fileID: 796911535}
   - {fileID: 1833746535}
-  - {fileID: 1075253218}
   - {fileID: 1631834093}
+  - {fileID: 1075253218}
   - {fileID: 1149726008}
   - {fileID: 656853243}
   - {fileID: 446862285}
@@ -17769,7 +18618,7 @@ GameObject:
   - component: {fileID: 1226412279}
   - component: {fileID: 1226412278}
   - component: {fileID: 1226412277}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CancelButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17889,7 +18738,7 @@ GameObject:
   - component: {fileID: 1241898754}
   - component: {fileID: 1241898756}
   - component: {fileID: 1241898755}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18289,7 +19138,7 @@ GameObject:
   - component: {fileID: 1284180304}
   - component: {fileID: 1284180303}
   - component: {fileID: 1284180302}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ExButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18359,7 +19208,55 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1284180303}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalPayment
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalLastPrice
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalOilInputTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1284180303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18472,7 +19369,7 @@ GameObject:
   - component: {fileID: 1312464400}
   - component: {fileID: 1312464399}
   - component: {fileID: 1312464398}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18542,7 +19439,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1312464399}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1312464399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18592,7 +19501,7 @@ GameObject:
   - component: {fileID: 1314530702}
   - component: {fileID: 1314530704}
   - component: {fileID: 1314530703}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18734,7 +19643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1324633440
 Transform:
   m_ObjectHideFlags: 0
@@ -18972,7 +19881,7 @@ GameObject:
   - component: {fileID: 1338148904}
   - component: {fileID: 1338148906}
   - component: {fileID: 1338148905}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19107,7 +20016,7 @@ GameObject:
   - component: {fileID: 1343215629}
   - component: {fileID: 1343215628}
   - component: {fileID: 1343215627}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19177,7 +20086,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1343215628}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 100000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1343215628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19216,6 +20149,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343215625}
   m_CullTransparentMesh: 1
+--- !u!1 &1344839883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1344839884}
+  - component: {fileID: 1344839886}
+  - component: {fileID: 1344839885}
+  m_Layer: 5
+  m_Name: "\uC2E0\uC6A9\uCE74\uB4DC \uC120\uD0DD"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1344839884
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344839883}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.00052897463}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 656853243}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00011396408, y: 150.9999}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1344839885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344839883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uC8FC\uC720\uAC00 \uC644\uB8CC \uB418\uC5C8\uC73C\uB2C8 \uCE74\uB4DC\uB97C
+    \uD68C\uC218\uD574\uC8FC\uC138\uC694 "
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: aeebdf30854e18c44853e98f118922c2, type: 2}
+  m_sharedMaterial: {fileID: 8345742651438314369, guid: aeebdf30854e18c44853e98f118922c2, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1344839886
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344839883}
+  m_CullTransparentMesh: 1
 --- !u!1 &1345390251
 GameObject:
   m_ObjectHideFlags: 0
@@ -19228,7 +20296,7 @@ GameObject:
   - component: {fileID: 1345390255}
   - component: {fileID: 1345390254}
   - component: {fileID: 1345390253}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19298,7 +20366,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1345390254}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 60000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1345390254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19410,7 +20502,7 @@ GameObject:
   - component: {fileID: 1352203814}
   - component: {fileID: 1352203816}
   - component: {fileID: 1352203815}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19545,7 +20637,7 @@ GameObject:
   - component: {fileID: 1359476398}
   - component: {fileID: 1359476397}
   - component: {fileID: 1359476396}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19615,7 +20707,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1359476397}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ClickNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1359476397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19772,6 +20876,140 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6c749124a04d7c745ada192ccdffd81e, type: 3}
   m_PrefabInstance: {fileID: 1364385742}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1366234141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1366234142}
+  - component: {fileID: 1366234144}
+  - component: {fileID: 1366234143}
+  m_Layer: 5
+  m_Name: "\uC2E0\uC6A9\uCE74\uB4DC \uC120\uD0DD"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1366234142
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366234141}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 719873442}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 151}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1366234143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366234141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uC2E0\uC6A9\uCE74\uB4DC \uC120\uD0DD"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: aeebdf30854e18c44853e98f118922c2, type: 2}
+  m_sharedMaterial: {fileID: 8345742651438314369, guid: aeebdf30854e18c44853e98f118922c2, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1366234144
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366234141}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1371689224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19901,7 +21139,7 @@ GameObject:
   - component: {fileID: 1372636458}
   - component: {fileID: 1372636460}
   - component: {fileID: 1372636459}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20037,7 +21275,7 @@ GameObject:
   - component: {fileID: 1377573964}
   - component: {fileID: 1377573963}
   - component: {fileID: 1377573962}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20107,7 +21345,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1377573963}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ClickNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1377573963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20382,7 +21632,7 @@ GameObject:
   - component: {fileID: 1400909894}
   - component: {fileID: 1400909896}
   - component: {fileID: 1400909895}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20458,7 +21708,7 @@ GameObject:
   - component: {fileID: 1405447661}
   - component: {fileID: 1405447660}
   - component: {fileID: 1405447659}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PreButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20528,7 +21778,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1405447660}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1405447660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20578,7 +21840,7 @@ GameObject:
   - component: {fileID: 1415212276}
   - component: {fileID: 1415212278}
   - component: {fileID: 1415212277}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20653,7 +21915,7 @@ GameObject:
   - component: {fileID: 1417578109}
   - component: {fileID: 1417578111}
   - component: {fileID: 1417578110}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21337,6 +22599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: roadTile (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2997005867142997266, guid: b376effa2b04b3446afeeb75957bdce8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b376effa2b04b3446afeeb75957bdce8, type: 3}
 --- !u!4 &1468832333 stripped
@@ -21355,7 +22621,7 @@ GameObject:
   - component: {fileID: 1471218552}
   - component: {fileID: 1471218554}
   - component: {fileID: 1471218553}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21610,6 +22876,140 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2808375537285832227, guid: 858c4c079944c3c40b3eace70f40dec4, type: 3}
   m_PrefabInstance: {fileID: 1485752271}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1493432775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1493432776}
+  - component: {fileID: 1493432778}
+  - component: {fileID: 1493432777}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1493432776
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493432775}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1075253218}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 123}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1493432777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493432775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uC8FC\uC720 \uC190\uC7A1\uC774\uB97C \uB4E4\uACE0 \uC8FC\uC720\uD558\uC138\uC694"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: aeebdf30854e18c44853e98f118922c2, type: 2}
+  m_sharedMaterial: {fileID: 8345742651438314369, guid: aeebdf30854e18c44853e98f118922c2, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1493432778
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493432775}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1498835683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21684,7 +23084,7 @@ GameObject:
   - component: {fileID: 1500528361}
   - component: {fileID: 1500528360}
   - component: {fileID: 1500528359}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CashButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21754,7 +23154,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1500528360}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1500528360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21804,7 +23228,7 @@ GameObject:
   - component: {fileID: 1501025032}
   - component: {fileID: 1501025034}
   - component: {fileID: 1501025033}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21939,7 +23363,7 @@ GameObject:
   - component: {fileID: 1501923681}
   - component: {fileID: 1501923680}
   - component: {fileID: 1501923679}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CancelButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22009,7 +23433,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1501923680}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1501923680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22059,7 +23495,7 @@ GameObject:
   - component: {fileID: 1522347284}
   - component: {fileID: 1522347286}
   - component: {fileID: 1522347285}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22182,6 +23618,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1522347283}
   m_CullTransparentMesh: 1
+--- !u!1 &1531480822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1531480823}
+  - component: {fileID: 1531480825}
+  - component: {fileID: 1531480824}
+  m_Layer: 5
+  m_Name: "\uC2E0\uC6A9\uCE74\uB4DC \uC870\uD68C"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1531480823
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531480822}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.00029008285}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 796911535}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 150.99988}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1531480824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531480822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uC2E0\uC6A9\uCE74\uB4DC \uC870\uD68C \uC911\uC785\uB2C8\uB2E4"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: aeebdf30854e18c44853e98f118922c2, type: 2}
+  m_sharedMaterial: {fileID: 8345742651438314369, guid: aeebdf30854e18c44853e98f118922c2, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1531480825
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531480822}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1532770340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22255,7 +23825,7 @@ GameObject:
   - component: {fileID: 1537658571}
   - component: {fileID: 1537658573}
   - component: {fileID: 1537658572}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22389,7 +23959,7 @@ GameObject:
   - component: {fileID: 1538122410}
   - component: {fileID: 1538122412}
   - component: {fileID: 1538122411}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22408,6 +23978,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1972701686}
+  - {fileID: 1089354087}
   m_Father: {fileID: 733155063}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22465,7 +24036,7 @@ GameObject:
   - component: {fileID: 1543257162}
   - component: {fileID: 1543257164}
   - component: {fileID: 1543257163}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: FirePreventionPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22694,7 +24265,7 @@ GameObject:
   - component: {fileID: 1584170129}
   - component: {fileID: 1584170128}
   - component: {fileID: 1584170127}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22764,7 +24335,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1584170128}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ClickNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1584170128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22996,6 +24579,7 @@ GameObject:
   - component: {fileID: 1594641929}
   - component: {fileID: 1594641928}
   - component: {fileID: 1594641931}
+  - component: {fileID: 1594641932}
   m_Layer: 0
   m_Name: CardReader
   m_TagString: Untagged
@@ -23111,10 +24695,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1594641932}
+        m_TargetAssemblyTypeName: CardReader, Assembly-CSharp
+        m_MethodName: GasStationInsertCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1594641932}
+        m_TargetAssemblyTypeName: CardReader, Assembly-CSharp
+        m_MethodName: GasStationRetrieveCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_OnHoverEntered:
@@ -23135,6 +24743,18 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!114 &1594641932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594641926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2fff054cace8b14ea1835cf4f74dc9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1605119530
 GameObject:
   m_ObjectHideFlags: 0
@@ -23923,7 +25543,7 @@ GameObject:
   - component: {fileID: 1631834093}
   - component: {fileID: 1631834095}
   - component: {fileID: 1631834094}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GasoilPanel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23945,7 +25565,7 @@ RectTransform:
   - {fileID: 1945444406}
   - {fileID: 1942653673}
   m_Father: {fileID: 1212532100}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -24001,7 +25621,7 @@ GameObject:
   - component: {fileID: 1636256353}
   - component: {fileID: 1636256355}
   - component: {fileID: 1636256354}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24201,7 +25821,7 @@ GameObject:
   - component: {fileID: 1660995525}
   - component: {fileID: 1660995527}
   - component: {fileID: 1660995526}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24397,7 +26017,7 @@ GameObject:
   - component: {fileID: 1667892711}
   - component: {fileID: 1667892710}
   - component: {fileID: 1667892709}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24467,7 +26087,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1667892710}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 40000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1667892710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24587,7 +26231,7 @@ GameObject:
   - component: {fileID: 1671883081}
   - component: {fileID: 1671883083}
   - component: {fileID: 1671883082}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24721,7 +26365,7 @@ GameObject:
   - component: {fileID: 1673914768}
   - component: {fileID: 1673914770}
   - component: {fileID: 1673914769}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25234,7 +26878,7 @@ GameObject:
   - component: {fileID: 1705272595}
   - component: {fileID: 1705272597}
   - component: {fileID: 1705272596}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25448,7 +27092,7 @@ GameObject:
   - component: {fileID: 1718837538}
   - component: {fileID: 1718837537}
   - component: {fileID: 1718837536}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25518,7 +27162,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1718837537}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 70000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1718837537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25911,7 +27579,7 @@ GameObject:
   - component: {fileID: 1756262604}
   - component: {fileID: 1756262603}
   - component: {fileID: 1756262602}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25981,7 +27649,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1756262603}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1756262603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26031,7 +27711,7 @@ GameObject:
   - component: {fileID: 1756767431}
   - component: {fileID: 1756767433}
   - component: {fileID: 1756767432}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26413,7 +28093,7 @@ GameObject:
   - component: {fileID: 1777414056}
   - component: {fileID: 1777414058}
   - component: {fileID: 1777414057}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26690,7 +28370,7 @@ GameObject:
   - component: {fileID: 1800315879}
   - component: {fileID: 1800315881}
   - component: {fileID: 1800315880}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26934,8 +28614,8 @@ GameObject:
   - component: {fileID: 1833746535}
   - component: {fileID: 1833746537}
   - component: {fileID: 1833746536}
-  m_Layer: 0
-  m_Name: PaymentPanel (2)
+  m_Layer: 5
+  m_Name: X_PaymentPanel (2)_X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27013,7 +28693,7 @@ GameObject:
   - component: {fileID: 1835448648}
   - component: {fileID: 1835448650}
   - component: {fileID: 1835448649}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27425,7 +29105,7 @@ GameObject:
   - component: {fileID: 1912478225}
   - component: {fileID: 1912478227}
   - component: {fileID: 1912478226}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: OilPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27814,7 +29494,7 @@ GameObject:
   - component: {fileID: 1942653673}
   - component: {fileID: 1942653675}
   - component: {fileID: 1942653674}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27890,7 +29570,7 @@ GameObject:
   - component: {fileID: 1945314203}
   - component: {fileID: 1945314202}
   - component: {fileID: 1945314201}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PreButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27960,7 +29640,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1945314202}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1945314202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28011,7 +29703,7 @@ GameObject:
   - component: {fileID: 1945444409}
   - component: {fileID: 1945444408}
   - component: {fileID: 1945444407}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: FullButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28081,7 +29773,55 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1945444408}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalPayment
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalLastPrice
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalOilInputTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1945444408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28213,7 +29953,7 @@ GameObject:
   - component: {fileID: 1959739376}
   - component: {fileID: 1959739375}
   - component: {fileID: 1959739374}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NumButton (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28283,7 +30023,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1959739375}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 50000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1959739375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28333,7 +30097,7 @@ GameObject:
   - component: {fileID: 1965197027}
   - component: {fileID: 1965197029}
   - component: {fileID: 1965197028}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28408,8 +30172,8 @@ GameObject:
   - component: {fileID: 1972701686}
   - component: {fileID: 1972701688}
   - component: {fileID: 1972701687}
-  m_Layer: 0
-  m_Name: Text (TMP)
+  m_Layer: 5
+  m_Name: Number_Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28431,8 +30195,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -34.47, y: 0}
+  m_SizeDelta: {x: 277.41, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1972701687
 MonoBehaviour:
@@ -28488,7 +30252,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -28543,7 +30307,7 @@ GameObject:
   - component: {fileID: 1972843675}
   - component: {fileID: 1972843674}
   - component: {fileID: 1972843673}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CancelButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28613,7 +30377,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1972843674}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1972843674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29093,7 +30869,7 @@ GameObject:
   - component: {fileID: 2006087402}
   - component: {fileID: 2006087404}
   - component: {fileID: 2006087403}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29169,8 +30945,8 @@ GameObject:
   - component: {fileID: 2014007294}
   - component: {fileID: 2014007293}
   - component: {fileID: 2014007292}
-  m_Layer: 0
-  m_Name: DiselButton
+  m_Layer: 5
+  m_Name: DisselButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29239,7 +31015,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2014007293}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: SetOilType
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2014007293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29355,7 +31155,7 @@ GameObject:
   - component: {fileID: 2024461638}
   - component: {fileID: 2024461640}
   - component: {fileID: 2024461639}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29551,7 +31351,7 @@ GameObject:
   - component: {fileID: 2057317576}
   - component: {fileID: 2057317578}
   - component: {fileID: 2057317577}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29597,7 +31397,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -29685,7 +31485,7 @@ GameObject:
   - component: {fileID: 2061344903}
   - component: {fileID: 2061344905}
   - component: {fileID: 2061344904}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30009,7 +31809,7 @@ GameObject:
   - component: {fileID: 2089446819}
   - component: {fileID: 2089446821}
   - component: {fileID: 2089446820}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30339,7 +32139,7 @@ GameObject:
   - component: {fileID: 2126095919}
   - component: {fileID: 2126095918}
   - component: {fileID: 2126095917}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: FullButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30409,7 +32209,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2126095918}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 919132148970914939}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2126095918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30507,7 +32319,7 @@ GameObject:
   - component: {fileID: 2145131983}
   - component: {fileID: 2145131985}
   - component: {fileID: 2145131984}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: InsertPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30708,13 +32520,53 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450652710133440}
+  - component: {fileID: 919132148970914939}
   m_Layer: 0
-  m_Name: GasStation_KIOSK (3)
+  m_Name: GasStation_KIOSK_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &919132148970914939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148970914938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ad3d6b9f37408d4e9f8eddac050071c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kioskPanelArr:
+  - {fileID: 4844717}
+  - {fileID: 1543257161}
+  - {fileID: 1912478224}
+  - {fileID: 2145131982}
+  - {fileID: 733155062}
+  - {fileID: 719873441}
+  - {fileID: 796911534}
+  - {fileID: 1631834092}
+  - {fileID: 1075253217}
+  - {fileID: 1149726007}
+  - {fileID: 656853242}
+  - {fileID: 446862284}
+  kioskPanelIndex: 0
+  cardReaderCol: {fileID: 1594641928}
+  card: {fileID: 2360442652707980295}
+  gasolinePrice: 1739
+  dissel: 1659
+  h_gasolinePrice: 1959
+  oilInputTimePerLitter: 1
+  oilInputTime: 0
+  lastPrice: 0
+  numberText: {fileID: 1972701687}
+  toggleTypeText: {fileID: 1089354088}
+  resultNumber: 0
+  oilType: 0
+  toggleType: 1
 --- !u!33 &950993664219423145
 MeshFilter:
   m_ObjectHideFlags: 0

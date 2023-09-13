@@ -5,31 +5,34 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 
-public class GasStationKiosk : MonoBehaviour
+public class GasStationKiosk : Singleton<GasStationKiosk>
 {
     #region field
     [Header("키오스크")]
     [SerializeField] private GameObject[] kioskPanelArr = null;
     public int kioskPanelIndex = 0;
+    public Collider cardReaderCol = null;
+    public Collider card = null;
 
     [Header("주유타입")]
     public int gasolinePrice = 1739;
     public int dissel = 1659;
     public int h_gasolinePrice = 1959;
     public float oilInputTimePerLitter = 0;
-    public float oilInputTime = 0;
+    public float oilInputTime = 1;
     public float lastPrice = 0;
     IEnumerator inputOil = null;
 
     [Header("숫자입력")]
     [SerializeField] private TextMeshProUGUI numberText = null;
+    [SerializeField] private TextMeshProUGUI toggleTypeText = null;
     public int resultNumber = 0;
 
     public OilType oilType = OilType.Gasoline;
     public enum OilType
     {
-        Gasoline,
-        Dissel,
+        Gasoline = 0,
+        Diesel,
         HGasoline
     }
 
@@ -47,6 +50,47 @@ public class GasStationKiosk : MonoBehaviour
         inputOil = CoInputOil();
     }
 
+    /// <summary>
+    /// 0 => 휘발유
+    /// 1 => 경유
+    /// 2 => 고급휘발유
+    /// </summary>
+    /// <param name="new_oilType"></param>
+    public void SetOilType(int new_oilType)
+    {
+        switch (new_oilType)
+        {
+            case 0:
+                oilType = OilType.Gasoline;
+                break;
+            case 1:
+                oilType = OilType.Diesel;
+                break;
+            case 2:
+                oilType = OilType.HGasoline;
+                break;
+        }
+    }
+
+    public void SetPaymentType(int new_paymentType)
+    {
+        switch (new_paymentType)
+        {
+            case 0:
+                toggleType = ToggleType.Man;
+                toggleTypeText.text = "만원";
+                break;
+            case 1:
+                toggleType = ToggleType.Won;
+                toggleTypeText.text = "원";
+                break;
+            case 2:
+                toggleType = ToggleType.Litter;
+                toggleTypeText.text = "리터";
+                break;
+        }
+    }
+
     // 주유 시작
     public void StartInputOil()
     {
@@ -59,12 +103,27 @@ public class GasStationKiosk : MonoBehaviour
         kioskPanelArr[kioskPanelIndex].SetActive(false);
         kioskPanelIndex += dir;
         kioskPanelArr[kioskPanelIndex].SetActive(true);
+        if(kioskPanelIndex == 5)
+        {
+            cardReaderCol.enabled = true;
+        }
+        else if(kioskPanelIndex == 6)
+        {
+            StartCoroutine(ChangePanelSequence());
+            cardReaderCol.enabled = false;
+            card.enabled = false;
+        }
+        else if(kioskPanelIndex == 10)
+        {
+            cardReaderCol.enabled = true;
+            card.enabled = true;
+        }
     }
 
     // 숫자 선택, 확인 버튼
-    public void ChooseNumber(int number = default)
+    public void ChooseNumber(int number = -1)
     {
-        if (number != default)
+        if (number != -1)
         {
             resultNumber = number;
         }
@@ -75,9 +134,9 @@ public class GasStationKiosk : MonoBehaviour
     }
 
     // 숫자 입력
-    public void ClickNumber(int number = default)
+    public void ClickNumber(int number = -1)
     {
-        if (number != default)
+        if (number != -1)
         {
             numberText.text = numberText.text + number;
         }
@@ -109,7 +168,7 @@ public class GasStationKiosk : MonoBehaviour
     {
         switch (oilType)
         {
-            case OilType.Dissel:
+            case OilType.Diesel:
                 resultNumber = resultNumber * dissel;
                 break;
             case OilType.Gasoline:
@@ -132,7 +191,7 @@ public class GasStationKiosk : MonoBehaviour
         {
             switch (oilType)
             {
-                case OilType.Dissel:
+                case OilType.Diesel:
                     lastPrice = resultNumber - resultNumber % dissel;
                     break;
                 case OilType.Gasoline:
@@ -150,7 +209,7 @@ public class GasStationKiosk : MonoBehaviour
     {
         switch (oilType)
         {
-            case OilType.Dissel:
+            case OilType.Diesel:
                 oilInputTime = resultNumber / dissel;
                 break;
             case OilType.Gasoline:
@@ -164,12 +223,21 @@ public class GasStationKiosk : MonoBehaviour
         oilInputTime = oilInputTime * oilInputTimePerLitter;
     }
 
+    private IEnumerator ChangePanelSequence()
+    {
+        yield return new WaitForSeconds(5);
+        OnOffKioskPanel(1);
+    }
+
     // 주유
     private IEnumerator CoInputOil()
     {
-        yield return new WaitForSeconds(oilInputTime);
+        Debug.Log(oilInputTime);
+        OnOffKioskPanel(1);
+        yield return new WaitForSeconds(5);
         OnOffKioskPanel(1);
         StopCoroutine(inputOil);
-        inputOil.Reset();
+        inputOil = null;
+        inputOil = CoInputOil();
     }
 }

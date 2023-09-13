@@ -14,6 +14,7 @@ public class ButtonManager : MonoBehaviour
         Button[] allButtonsInScene = Resources.FindObjectsOfTypeAll<Button>();
         foreach (Button btn in allButtonsInScene)
         {
+            btn.gameObject.layer = LayerMask.NameToLayer("UI");
             btn.colors = colorBlock;
         }
     }

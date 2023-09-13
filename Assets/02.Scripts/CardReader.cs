@@ -11,6 +11,11 @@ public class CardReader : MonoBehaviour
         instance = this;
     }
 
+    private void Start()
+    {
+        this.GetComponent<Collider>().enabled = false;
+    }
+
     /*private void OnTriggerStay(Collider other)
     {
         var product = other.GetComponent<Product>();
@@ -60,7 +65,7 @@ public class CardReader : MonoBehaviour
         }
     }
 
-    // 카드 회수
+    // 무인매장 키오스크 카드 회수
     public void RetrieveCard()
     {
         KioskUI.instance.ChangeKioskPage(1);
@@ -71,5 +76,17 @@ public class CardReader : MonoBehaviour
         }
         /*cardObj.GetComponent<Collider>().isTrigger = false;
         cardObj.transform.DOMoveZ(0.05f, 3f).SetEase(Ease.Linear);*/
+    }
+
+    // 주유소 키오스크 카드 회수
+    public void GasStationInsertCard()
+    {
+        GasStationKiosk.Instance.OnOffKioskPanel(1);
+    }
+
+    // 주유소 키오스크 카드 회수
+    public void GasStationRetrieveCard()
+    {
+        GasStationKiosk.Instance.OnOffKioskPanel(1);
     }
 }
