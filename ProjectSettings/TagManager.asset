@@ -17,9 +17,9 @@ TagManager:
   - UI
   - Player
   - Interactable
-  - Ground
-  - Ceiling
   - Grab Ignore Ray
+  - Ceiling
+  - 
   - 
   - 
   - 

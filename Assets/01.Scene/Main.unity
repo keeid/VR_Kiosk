@@ -1454,7 +1454,7 @@ MonoBehaviour:
   m_SphereCastRadius: 0.1
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 160
   m_RaycastTriggerInteraction: 1
   m_RaycastSnapVolumeInteraction: 1
   m_HitClosestOnly: 0
@@ -2620,7 +2620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4392977769804729280, guid: 734f45a94eef5d549a461b0cb46f1a80, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -4298443234064970155, guid: 734f45a94eef5d549a461b0cb46f1a80, type: 3}
       propertyPath: m_Layer
@@ -8393,7 +8393,7 @@ MonoBehaviour:
   m_SphereCastRadius: 0.1
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 160
   m_RaycastTriggerInteraction: 1
   m_RaycastSnapVolumeInteraction: 1
   m_HitClosestOnly: 0
@@ -8598,7 +8598,7 @@ GameObject:
   - component: {fileID: 780221726}
   - component: {fileID: 780221725}
   - component: {fileID: 780221724}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11934,7 +11934,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1471737170}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9050c6df4fc34a8418a8166da2f2ee66, type: 3}
+  m_Script: {fileID: 11500000, guid: b2a1b30c052090145b50b26233a79f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 832326955}
@@ -11944,7 +11944,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 4294967295
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -12061,12 +12061,6 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  hapticComponent: {fileID: 0}
-  hoverComponent: {fileID: 0}
-  leftAttachTransform: {fileID: 0}
-  rightAttachTransform: {fileID: 0}
-  isLeftGrabProduct: 0
-  isRightGrabProduct: 0
 --- !u!54 &1471737173
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12081,8 +12075,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 2
+  m_Constraints: 4
+  m_CollisionDetection: 0
 --- !u!153 &1471737174
 ConfigurableJoint:
   m_ObjectHideFlags: 0
