@@ -34654,6 +34654,8 @@ MonoBehaviour:
   quitNoBtn: {fileID: 2999262459452832130}
   optionBtn: {fileID: 2999262459036465939}
   optionExitBtn: {fileID: 2999262459518020013}
+  xrOrigin: {fileID: 0}
+  kioskTr: {fileID: 0}
 --- !u!1 &2999262457960916813
 GameObject:
   m_ObjectHideFlags: 0
@@ -41641,10 +41643,34 @@ MonoBehaviour:
   m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3621905798576163794}
+        m_TargetAssemblyTypeName: HoverComponent, Assembly-CSharp
+        m_MethodName: OffGrabRay
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3621905797590910910}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3621905798576163794}
+        m_TargetAssemblyTypeName: HoverComponent, Assembly-CSharp
+        m_MethodName: OnGrabRay
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3621905797590910910}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -43156,7 +43182,7 @@ MonoBehaviour:
   m_Reticle: {fileID: 0}
   m_BlockedReticle: {fileID: 0}
   m_StopLineAtFirstRaycastHit: 1
-  m_StopLineAtSelection: 0
+  m_StopLineAtSelection: 1
   m_SnapEndpointIfAvailable: 1
 --- !u!1 &3621905797590910910
 GameObject:
@@ -44460,7 +44486,7 @@ MonoBehaviour:
   m_Reticle: {fileID: 0}
   m_BlockedReticle: {fileID: 0}
   m_StopLineAtFirstRaycastHit: 1
-  m_StopLineAtSelection: 0
+  m_StopLineAtSelection: 1
   m_SnapEndpointIfAvailable: 1
 --- !u!114 &3621905798184039652
 MonoBehaviour:
@@ -44922,93 +44948,8 @@ MonoBehaviour:
   rightXr: {fileID: 3621905798115461653}
   leftLine: {fileID: 3621905797590910909}
   rightLine: {fileID: 3621905798115461655}
-  enterGradient:
-    serializedVersion: 2
-    key0: {r: 1, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 0, b: 0, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  exitGradient:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  alphaGradient:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 0}
-    key1: {r: 1, g: 1, b: 1, a: 0}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
+  leftGrabRay: {fileID: 0}
+  rightGrabRay: {fileID: 0}
   leftTpXr: {fileID: 3621905797224988695}
   rightTpXr: {fileID: 3621905798706256730}
   leftTpLine: {fileID: 0}
@@ -45429,10 +45370,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3621905798576163794}
+        m_TargetAssemblyTypeName: HoverComponent, Assembly-CSharp
+        m_MethodName: OffGrabRay
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3621905798115461640}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3621905798576163794}
+        m_TargetAssemblyTypeName: HoverComponent, Assembly-CSharp
+        m_MethodName: OnGrabRay
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3621905798115461640}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_OnHoverEntered:

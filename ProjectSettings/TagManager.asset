@@ -17,9 +17,9 @@ TagManager:
   - UI
   - Player
   - Interactable
-  - Grab Ignore Ray
-  - Ceiling
-  - 
+  - Character Controller
+  - Teleport
+  - Background
   - 
   - 
   - 

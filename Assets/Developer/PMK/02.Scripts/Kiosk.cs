@@ -203,6 +203,7 @@ public class Kiosk : MonoBehaviour
             scannedProduct.Item3.SubProductCount(-scannedProduct.Item3.count);
             return;
         }
+        MissionManager.Instance.DeleterProductInKiosk(info);
         Destroy(content);
         scannedProducts.Remove(scannedProducts.Where(x => x.Item1 == info.productName).First() as System.Tuple<string, int, ScannedProduct>);
         scannedProducts = scannedProducts.Where(x => x != null).ToList();

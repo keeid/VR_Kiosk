@@ -241,8 +241,9 @@ MonoBehaviour:
   missionProducts: []
   missionProductCnt: 
   currentProductCnt: 
-  kioskTr: {fileID: 1447087960}
+  kioskTr: {fileID: 467140253}
   playerTr: {fileID: 1105653353}
+  basketTriggerTr: {fileID: 6848707004234812131}
 --- !u!4 &39778723
 Transform:
   m_ObjectHideFlags: 0
@@ -3671,6 +3672,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433337256}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &467140252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 467140253}
+  m_Layer: 0
+  m_Name: KioskFrontTr
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &467140253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467140252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.005, y: 0, z: 1.91}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1447087960}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &475788733
 GameObject:
   m_ObjectHideFlags: 0
@@ -6711,7 +6742,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005272107}
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.467, y: 0.214, z: -0.552}
+  m_LocalPosition: {x: 0.467, y: 0.214, z: -4.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 182178943}
@@ -6809,16 +6840,16 @@ GameObject:
   - component: {fileID: 1105653351}
   - component: {fileID: 1105653359}
   - component: {fileID: 1105653358}
-  - component: {fileID: 1105653357}
   - component: {fileID: 1105653356}
   - component: {fileID: 1105653355}
-  - component: {fileID: 1105653354}
   - component: {fileID: 1105653360}
   - component: {fileID: 1105653361}
   - component: {fileID: 1105653362}
   - component: {fileID: 1105653363}
   - component: {fileID: 1105653364}
   - component: {fileID: 1105653365}
+  - component: {fileID: 1105653357}
+  - component: {fileID: 1105653354}
   m_Layer: 6
   m_Name: XR Origin
   m_TagString: Untagged
@@ -6856,7 +6887,7 @@ MonoBehaviour:
   m_OriginBaseGameObject: {fileID: 1105653350}
   m_CameraFloorOffsetObject: {fileID: 190595658}
   m_RequestedTrackingOriginMode: 2
-  m_CameraYOffset: 1.1176
+  m_CameraYOffset: 2.26
 --- !u!4 &1105653353
 Transform:
   m_ObjectHideFlags: 0
@@ -6865,7 +6896,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105653350}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.083, y: 0, z: -1.128}
+  m_LocalPosition: {x: -0.083, y: 1.061, z: -10.251}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 190595659}
@@ -6979,8 +7010,8 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2.66
-  m_Radius: 0.05
+  m_Height: 3
+  m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -17372,7 +17403,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 459614230181464373}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &459614230181464373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18477,6 +18520,8 @@ MonoBehaviour:
   quitNoBtn: {fileID: 459614231665200621}
   optionBtn: {fileID: 459614231542599548}
   optionExitBtn: {fileID: 459614231604207042}
+  xrOrigin: {fileID: 1105653353}
+  kioskTr: {fileID: 467140253}
 --- !u!114 &459614230474855204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38434,7 +38479,7 @@ GameObject:
   - component: {fileID: 8247994414202328705}
   - component: {fileID: 605084737}
   - component: {fileID: 605084736}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70325,8 +70370,8 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
-  m_SecondaryAttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 6848707003402088835}
+  m_SecondaryAttachTransform: {fileID: 6848707004071197955}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
@@ -70401,7 +70446,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6848707002611759177}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.104, z: 0}
+  m_LocalPosition: {x: 0.068, y: 0.104, z: -4.3209996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6848707003402088835}
@@ -75507,7 +75552,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7828167347783625916}
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.467, y: 0.214, z: -0.348}
+  m_LocalPosition: {x: 0.467, y: 0.214, z: -4.286}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 666707726}

@@ -74,6 +74,7 @@ public class CardReader : MonoBehaviour
         {
             Debug.Log("2");
         }
+        MissionManager.Instance.NextStep();
         /*cardObj.GetComponent<Collider>().isTrigger = false;
         cardObj.transform.DOMoveZ(0.05f, 3f).SetEase(Ease.Linear);*/
     }

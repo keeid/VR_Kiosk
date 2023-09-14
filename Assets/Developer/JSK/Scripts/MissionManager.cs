@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class MissionManager : MonoBehaviour
@@ -17,7 +18,7 @@ public class MissionManager : MonoBehaviour
 
     // Mission Info - Product
     public int typeCnt { get; private set; } // 담아야 하는 상품의 종류 수 2 ~ 3
-    
+
     public ProductInfo[] missionProducts = null;
     public int[] missionProductCnt = null;
 
@@ -45,6 +46,7 @@ public class MissionManager : MonoBehaviour
     public Transform kioskTr;
     public Transform playerTr;
 
+    public Transform basketTriggerTr;
 
     private void Awake()
     {
@@ -63,13 +65,6 @@ public class MissionManager : MonoBehaviour
                 break;
             case 2:
                 if (isStepUp) InitSetting2();
-                break;
-            case 3:
-                if (isStepUp) InitSetting3();
-                break;
-            case 4:
-                break;
-            case 5:
                 break;
         }
     }
@@ -93,7 +88,7 @@ public class MissionManager : MonoBehaviour
         {
             missionProducts[i] = products[productSelectNums[i]];
             //missionProductCnt[i] = Random.Range(1, 4);
-            missionProductCnt[i] = 1;
+            missionProductCnt[i] = 2;
             Debug.Log($"미션 상품 : {missionProducts[i]} , 개수 : {missionProductCnt[i]}");
         }
     }
@@ -122,7 +117,7 @@ public class MissionManager : MonoBehaviour
         return selectNum;
     }
     #endregion
-    
+
     #region Step0
     private void ChckProduct()
     {
@@ -149,22 +144,32 @@ public class MissionManager : MonoBehaviour
     public void RemoveProduct(Collider productColl)
     {
         string name;
+        int productCnt = 0;
+
         if (productColl.GetComponent<Product>().productInfo != null && isCountable)
         {
+            //이게 자식한바퀴 돌기
             name = productColl.GetComponent<Product>().productInfo.productName;
+            List<GameObject> product = new List<GameObject>();
+            if (basketTriggerTr.childCount != 0)
+            {
+              product = basketTriggerTr.GetComponentsInChildren<GameObject>().ToList();
+            }
+
+            for (int i = 0; i < product.Count; i++)
+            {
+                if (product[i].GetComponent<Product>().productInfo.name == name) productCnt++;
+            }
+
             for (int i = 0; i < missionProducts.Length; i++)
             {
-                Debug.Log($"체크 체크 {missionProducts[i].productName} : {name}");
                 if (missionProducts[i].productName == name)
                 {
-                    currentProductCnt[i]--;
+                    currentProductCnt[i] = productCnt;
                     CheckCnt(missionProducts[i], i);
                 }
-                else
-                {
-                }
-                i++;
             }
+
         }
     }
     private void CheckCnt(ProductInfo productinfo, int num)
@@ -172,7 +177,7 @@ public class MissionManager : MonoBehaviour
         //여기 하나 추가 예외 1.만약에 이미 최대치면 증가시켜야하나?
         //한번스텝 넘어가면 다음부터는 안넘어간다야
 
-        if(isCountable)
+        if (isCountable)
         {
             if (missionProductCnt[num] == currentProductCnt[num]) trueCnt++;
             if (trueCnt == typeCnt)
@@ -195,11 +200,11 @@ public class MissionManager : MonoBehaviour
             case 1:
                 missionKisokPos = Vector3.zero;
                 break;
-            
+
             case 2:
                 missionKisokPos = Vector3.zero;
                 break;
-         
+
             case 3:
 
                 missionKisokPos = Vector3.zero;
@@ -209,32 +214,26 @@ public class MissionManager : MonoBehaviour
 
     private void missionUpdate1()
     {
-        Collider[] colls = Physics.OverlapBox(missionKisokPos, Vector3.one, Quaternion.identity);
+        Collider[] colls = Physics.OverlapBox(missionKisokPos, Vector3.one * 2, Quaternion.identity);
         if (colls.Length != 0)
         {
             foreach (Collider coll in colls)
             {
-                if(coll.CompareTag("Player"))
+                if (coll.CompareTag("Player"))
                 {
                     NextStep();
                 }
             }
         }
-        if(Vector3.Distance(playerTr.position,kioskTr.position) <= 2f)
+        if (Vector3.Distance(playerTr.position, kioskTr.position) <= 2f)
         {
             NextStep();
         }
     }
     #endregion
 
-    // Step2 - 장바구니 올리기는 너무 간단 해 NextStep으로 패스
-    private void InitSetting2()
-    {
-        isStepUp = false;
-        NextStep();
-    }
     #region Step3 - 상품 스캔하기
-    private void InitSetting3()
+    private void InitSetting2()
     {
         isStepUp = false;
         isCountable = true;
@@ -278,6 +277,24 @@ public class MissionManager : MonoBehaviour
                     CheckCnt(missionProducts[i], i);
                 }
                 i++;
+            }
+        }
+    }
+
+    public void DeleterProductInKiosk(ProductInfo info)
+    {
+        string name;
+        if (info != null)
+        {
+            name = info.productName;
+            for (int i = 0; i < missionProducts.Length; i++)
+            {
+                Debug.Log($"체크 체크 {missionProducts[i].productName} : {name}");
+                if (missionProducts[i].productName == name)
+                {
+                    currentProductCnt[i] = 0;
+                    CheckCnt(missionProducts[i], i);
+                }
             }
         }
     }

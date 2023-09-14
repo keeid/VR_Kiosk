@@ -90,6 +90,8 @@ public class XRGrabInteractableTwoAttach : XRGrabInteractable
                 product.isInCart = false;
                 if (product.isInCart == false)
                 {
+                    Debug.Log("°ÅÁö");
+                    //MissionManager.Instance.RemoveProduct(product.GetComponent<Collider>());
                     tr.parent.parent = null;
                 }
                 break;

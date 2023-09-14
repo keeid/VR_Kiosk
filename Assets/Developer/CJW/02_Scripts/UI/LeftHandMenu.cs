@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -56,6 +57,11 @@ public class LeftHandMenu : MonoBehaviour
 
     [SerializeField]
     private Button optionExitBtn;
+
+
+    [Header("키오스크로 이동하는 기능")]
+    [SerializeField] private Transform xrOrigin = null;
+    [SerializeField] private Transform kioskTr = null;
 
     private void Start()
     {
@@ -148,6 +154,8 @@ public class LeftHandMenu : MonoBehaviour
     // 계산대로 이동
     public void MoveToKiosk()
     {
+        xrOrigin.position = kioskTr.position;
+        xrOrigin.rotation = kioskTr.rotation;
         // 기능 
         Debug.Log("계산대로 이동");
     }

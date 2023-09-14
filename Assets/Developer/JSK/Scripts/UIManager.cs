@@ -31,7 +31,7 @@ public class UIManager : MonoBehaviour
     
     private string timeString;
     
-    public bool isTaskInfo = false;
+    public bool isTaskInfo = true;
 
     private void Awake()
     {
@@ -39,8 +39,7 @@ public class UIManager : MonoBehaviour
     }
     private void Start()
     {
-        MainMissionPanel.gameObject.SetActive(true);
-        UnActivePanel(MainMissionPanel, 1f);
+        isTaskInfo = true;
         ActivePanel(ProductPanel, true, unactiveSec);
         SettingProductPanel();
     }
@@ -104,11 +103,11 @@ public class UIManager : MonoBehaviour
     }
     public IEnumerator CorActive(Transform targetTr, bool sustainable, float sec)
     {
-        yield return new WaitForSeconds(sec);
+        yield return new WaitForSeconds(0.5f);
         targetTr.gameObject.SetActive(true);
         if (!sustainable)
         {
-            yield return new WaitForSeconds(unactiveSec);
+            yield return new WaitForSeconds(sec);
             targetTr.gameObject.SetActive(false);
         }
         else
@@ -132,39 +131,35 @@ public class UIManager : MonoBehaviour
         {
             case 0:
                 MainMissionText.text = "상품을 바구니에 담으세요.";
-                ActivePanel(MainMissionPanel, false, 2f);
+                ActivePanel(MainMissionPanel, false, 3f);
                 break;
 
             case 1:
                 MainMissionText.text = $"{MissionManager.Instance.KioskNum}번 계산대 이동 하세요.";
                 Debug.Log("1번");
-                ActivePanel(MainMissionPanel, false, 2f);
+                ActivePanel(MainMissionPanel, false, 3f);
+                UnActivePanel(ProductPanel, 0f);
                 break;
 
             case 2:
-                MainMissionText.text = "장바구니 올리기.";
-                Debug.Log("2번");
-                ActivePanel(MainMissionPanel, false, 2f);
-                break;
-
-            case 3:
                 SettingProductPanel();
                 MainMissionText.text = "상품 스캔하기.";
-                Debug.Log("3번");
+                Debug.Log("2번");
                 ActivePanel(MainMissionPanel, false, 3f);
                 ActivePanel(ProductPanel, true, unactiveSec);
                 break;
 
-            case 4:
+            case 3:
                 MainMissionText.text = "상품 결제하기.";
-                Debug.Log("4번");
+                Debug.Log("3번");
                 ActivePanel(MainMissionPanel, false, 3f);
                 break;
-                
-            case 5:
+
+            case 4:
                 MainMissionText.text = "미션성공";
-                Debug.Log("5번");
+                Debug.Log("4번");
                 ActivePanel(MainMissionPanel, true, 3f);
+                UnActivePanel(ProductPanel, 0f);                
                 break;
         }
     }
