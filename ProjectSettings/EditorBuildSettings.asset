@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/01.Scene/Main.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/01.Scene/gasStation.unity
-    guid: 9e654be3a2d717d4d9ecd821c6838579
+    path: Assets/01.Scene/GasStation_New.unity
+    guid: a227550ce3755c743a71529d21963c3a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0645f57100712b946bc6203218e52bdc, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 54f2b1ece0fc3c043a241fd74fbdbc0d, type: 2}

@@ -16,8 +16,6 @@ public class HoverComponent : MonoBehaviour
         instance = this;
     }
 
-    public ActionBasedContinuousMoveProvider provider = null;
-
     [Header("Grab")]
     [SerializeField] private XRRayInteractor leftXr;
     [SerializeField] private XRRayInteractor rightXr;
@@ -25,12 +23,6 @@ public class HoverComponent : MonoBehaviour
     [SerializeField] private XRInteractorLineVisual rightLine;
     public GameObject leftGrabRay = null;
     public GameObject rightGrabRay = null;
-
-    [Header("Teleport")]
-    [SerializeField] private XRRayInteractor leftTpXr = null;
-    [SerializeField] private XRRayInteractor rightTpXr = null;
-    [SerializeField] private XRInteractorLineVisual leftTpLine;
-    [SerializeField] private XRInteractorLineVisual rightTpLine;
 
     private void Start()
     {
@@ -60,15 +52,5 @@ public class HoverComponent : MonoBehaviour
     private void OnHoverExit(XRBaseInteractable interactor, XRInteractorLineVisual line)
     {
         interactor.GetComponentsInChildren<Collider>().First().GetComponent<OutLineComponenet>().OffOutline();
-    }
-
-    public void OnGrabRay(GameObject go)
-    {
-        go.SetActive(true);
-    }
-
-    public void OffGrabRay(GameObject go)
-    {
-        go.SetActive(false);
     }
 }
