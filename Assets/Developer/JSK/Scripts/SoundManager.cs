@@ -24,12 +24,6 @@ public class SoundManager : MonoBehaviour
         bgmSound = GetComponent<BgmSound>();
     }
 
-
-
-
-
-
-
     // º¼·ýÁ¶Àý
     public void ControlTotalVolume(float value)
     {

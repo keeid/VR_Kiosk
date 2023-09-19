@@ -23,6 +23,7 @@ public class HoverComponent : MonoBehaviour
     [SerializeField] private XRInteractorLineVisual rightLine;
     public GameObject leftGrabRay = null;
     public GameObject rightGrabRay = null;
+    public AudioSource hoverAudio = null;
 
     private void Start()
     {
@@ -41,6 +42,7 @@ public class HoverComponent : MonoBehaviour
         try
         {
             interactor.GetComponentsInChildren<Collider>().First().GetComponent<OutLineComponenet>().OnOutline();
+            hoverAudio.PlayOneShot(hoverAudio.clip);
         }
         catch (NullReferenceException ex)
         {

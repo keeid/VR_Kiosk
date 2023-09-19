@@ -8,6 +8,9 @@ TagManager:
   - Right Hand
   - Product
   - Ball
+  - Destroyer
+  - Water
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -20,8 +23,8 @@ TagManager:
   - Character Controller
   - Teleport
   - Background
-  - 
-  - 
+  - None
+  - PlayerNone
   - 
   - 
   - 

@@ -16,7 +16,10 @@ public class Product : MonoBehaviour
 
     private void Init()
     {
-
+        if(productInfo == null)
+        {
+            productInfo = ObjectManager.Instance.productInfo;
+        }
         // Outline 없으면 OutlineComponent 추가
         if (GetComponent<Outline>() == null)
         {

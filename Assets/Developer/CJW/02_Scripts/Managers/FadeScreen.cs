@@ -6,7 +6,7 @@ public class FadeScreen : MonoBehaviour
 {
     public bool fadeOnStart = true;
     public float fadeDuration = 2;
-    public Color fadeColor;
+    public Color fadeColor = new Color(0, 0, 0, 1);
     public AnimationCurve fadeCurve;
     public string colorPropertyName = "_Color";
     private Renderer rend;
@@ -14,9 +14,13 @@ public class FadeScreen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rend = GetComponent<Renderer>();
+        rend = GetComponent<MeshRenderer>();
         rend.enabled = false;
-
+        if (rend == null)
+        {
+            Debug.LogError("Renderer component missing!");
+            return;
+        }
         if (fadeOnStart)
             FadeIn();
     }

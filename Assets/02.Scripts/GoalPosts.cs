@@ -5,22 +5,28 @@ using UnityEngine;
 public class GoalPosts : MonoBehaviour
 {
     public GameObject ball = null;
-    public GameObject confettiObj = null;
+    public GameObject confettiObj1 = null;
+    public GameObject confettiObj2 = null;
     public float confettiTime = default;
+    IEnumerator offConfetti = null;
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == ball.tag)
         {
-            CancelInvoke(); // ¹®Á¦ µÇ¸é »©±â
-            confettiObj.SetActive(true);
-            Invoke(nameof(OffConfetti), confettiTime);
+            offConfetti = null;
+            offConfetti = OffConfettiCo();
+            StartCoroutine(offConfetti);
         }
     }
 
-    // Confetti ²ô±â
-    private void OffConfetti()
+    IEnumerator OffConfettiCo()
     {
-        confettiObj.SetActive(false);
+        confettiObj1.SetActive(false);
+        confettiObj2.SetActive(false);
+        confettiObj1.SetActive(true);
+        confettiObj2.SetActive(true);
+        yield return new WaitForSeconds(confettiTime);
+        StopCoroutine(offConfetti);
     }
 }

@@ -5,7 +5,6 @@ using UnityEngine;
 public class AutoDriving : MonoBehaviour
 {
     public GameObject myCar;
-    public SelectMenu selectMenu;
     public static int numPoints = 3;
     public Transform[] wayPoints = new Transform[numPoints];
     public Transform origin, anchor;
@@ -44,7 +43,11 @@ public class AutoDriving : MonoBehaviour
         }    
         else
         {
-            selectMenu.GasUpReady();
+            origin.parent = null;
+            origin.position = anchor.position;
+            origin.rotation = anchor.rotation;
+            myCar.SetActive(true);
+            Destroy(this.gameObject);
             Destroy(GetComponent<AutoDriving>());
         }        
     }
