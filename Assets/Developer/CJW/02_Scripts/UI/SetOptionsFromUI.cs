@@ -60,17 +60,17 @@ public class SetOptionsFromUI : MonoBehaviour
         descriptWindow.SetActive(true);
     }
 
-    public void TotalVolumeValue(float _value)
-    {
-        SoundManager.Instance.ControlTotalVolume(_value);
-    }
-    public void EffectVolumeValue(float _value)
-    {
-        SoundManager.Instance.ControlEffectVolume(_value);
-    }
-    public void BgmVolumeValue(float _value)
-    {
-        SoundManager.Instance.ControlBgmVolume(_value);
-    }
+    //public void TotalVolumeValue(float _value)
+    //{
+    //    SoundManager.Instance.ControlTotalVolume(_value);
+    //}
+    //public void EffectVolumeValue(float _value)
+    //{
+    //    SoundManager.Instance.ControlEffectVolume(_value);
+    //}
+    //public void BgmVolumeValue(float _value)
+    //{
+    //    SoundManager.Instance.ControlBgmVolume(_value);
+    //}
 
 }

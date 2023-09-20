@@ -4,6 +4,14 @@ using UnityEngine;
 
 public static class Define
 {
+    public enum Sound
+    {
+        Bgm,
+        Effect,
+        UI,
+        MaxCount, // 종류 개수 의미
+    }
+
     public enum ObjectType
     {
         nonProduct,

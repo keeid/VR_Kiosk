@@ -179,7 +179,11 @@ public class MissionManager : MonoBehaviour
 
         if (isCountable)
         {
-            if (missionProductCnt[num] == currentProductCnt[num]) trueCnt++;
+            if (missionProductCnt[num] == currentProductCnt[num])
+            {
+                trueCnt++;
+                PathManager.Instance.CheckClearThePrdouct(num);
+            }
             if (trueCnt == typeCnt)
             {
                 isCountable = false;
