@@ -24,7 +24,7 @@ public class OutLineComponenet : MonoBehaviour
     // ¾Æ¿ô¶óÀÎ ÄÑ±â
     public void OnOutline()
     {
-        outline.OutlineColor = Color.red;
+        outline.OutlineColor = Color.blue;
     }
 
     // ¾Æ¿ô¶óÀÎ ²ô±â

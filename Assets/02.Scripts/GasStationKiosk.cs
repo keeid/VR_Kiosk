@@ -103,6 +103,7 @@ public class GasStationKiosk : Singleton<GasStationKiosk>
         kioskPanelArr[kioskPanelIndex].SetActive(false);
         kioskPanelIndex += dir;
         kioskPanelArr[kioskPanelIndex].SetActive(true);
+
         if(kioskPanelIndex == 5)
         {
             cardReaderCol.enabled = true;
@@ -113,7 +114,7 @@ public class GasStationKiosk : Singleton<GasStationKiosk>
             cardReaderCol.enabled = false;
             card.enabled = false;
         }
-        else if(kioskPanelIndex == 10)
+        else if(kioskPanelIndex == 8)
         {
             cardReaderCol.enabled = true;
             card.enabled = true;
@@ -233,8 +234,8 @@ public class GasStationKiosk : Singleton<GasStationKiosk>
     private IEnumerator CoInputOil()
     {
         Debug.Log(oilInputTime);
-        OnOffKioskPanel(1);
-        yield return new WaitForSeconds(5);
+        //OnOffKioskPanel(1);
+        yield return new WaitForSeconds(5); // oilinput time으로 변경하기
         OnOffKioskPanel(1);
         StopCoroutine(inputOil);
         inputOil = null;

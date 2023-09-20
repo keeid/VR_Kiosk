@@ -55,7 +55,7 @@ public class PathManager : MonoBehaviour
     public void CheckClearThePrdouct(int i)
     {
         clearTheProduct[i] = true;
-        // Set Off The Sign;z
+        // Set Off The Sign;
     }
 
     private void ShowProductSign()

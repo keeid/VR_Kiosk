@@ -54,6 +54,7 @@ public class MissionManager : MonoBehaviour
         Step = 0;
         InitSetting0();
     }
+
     private void Update()
     {
         Timer += Time.deltaTime;
@@ -68,6 +69,7 @@ public class MissionManager : MonoBehaviour
                 break;
         }
     }
+
     #region InitSetting - Step0 장바구니에 담기
     private void InitSetting0()
     {

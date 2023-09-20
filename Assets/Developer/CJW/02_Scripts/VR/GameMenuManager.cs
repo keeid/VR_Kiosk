@@ -23,7 +23,5 @@ public class GameMenuManager : MonoBehaviour
 
         // UI가 자신의 방향으로 바라보도록
         menu.transform.LookAt(new Vector3(head.position.x, menu.transform.position.y, head.position.z));
-        // 좌우반전
-        menu.transform.forward *= -1;
     }
 }

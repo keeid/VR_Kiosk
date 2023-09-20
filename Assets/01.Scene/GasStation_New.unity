@@ -423,7 +423,7 @@ RectTransform:
   - {fileID: 1397807381}
   - {fileID: 1215844521}
   m_Father: {fileID: 1476269232}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -936,7 +936,7 @@ RectTransform:
   - {fileID: 1998035078}
   - {fileID: 1096633785}
   m_Father: {fileID: 1476269232}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1745,7 +1745,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: OnOffKioskPanel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: ChooseNumber
         m_Mode: 3
@@ -1757,14 +1769,26 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
-        m_MethodName: OnOffKioskPanel
-        m_Mode: 3
+        m_MethodName: CalPayment
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalOilInputTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1920,7 +1944,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: CalPayment
         m_Mode: 1
@@ -1932,19 +1956,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
-        m_MethodName: CalLastPrice
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: CalOilInputTime
         m_Mode: 1
@@ -1956,14 +1968,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
-        m_MethodName: OnOffKioskPanel
-        m_Mode: 3
+        m_MethodName: CalLastPrice
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2089,7 +2101,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: CalPayment
         m_Mode: 1
@@ -2099,21 +2111,9 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
-        m_MethodName: CalLastPrice
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: CalOilInputTime
         m_Mode: 1
@@ -2125,14 +2125,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
-        m_MethodName: OnOffKioskPanel
-        m_Mode: 3
+        m_MethodName: CalLastPrice
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -2432,6 +2432,170 @@ MonoBehaviour:
   m_Spacing: {x: 10, y: 10}
   m_Constraint: 2
   m_ConstraintCount: 3
+--- !u!43 &312456468
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: cable
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 576
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 117
+    localAABB:
+      m_Center: {x: -0.07315033, y: -0.2072916, z: -0.4576496}
+      m_Extent: {x: 0.12046289, y: 0.93740666, z: 0.21821825}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 0
+  m_KeepIndices: 0
+  m_IndexFormat: 1
+  m_IndexBuffer: 000000000100000009000000010000000a0000000900000001000000020000000a000000020000000b0000000a00000002000000030000000b000000030000000c0000000b00000003000000040000000c000000040000000d0000000c00000004000000050000000d000000050000000e0000000d00000005000000060000000e000000060000000f0000000e00000006000000070000000f00000007000000100000000f000000070000000800000010000000080000001100000010000000090000000a000000120000000a00000013000000120000000a0000000b000000130000000b00000014000000130000000b0000000c000000140000000c00000015000000140000000c0000000d000000150000000d00000016000000150000000d0000000e000000160000000e00000017000000160000000e0000000f000000170000000f00000018000000170000000f0000001000000018000000100000001900000018000000100000001100000019000000110000001a0000001900000012000000130000001b000000130000001c0000001b00000013000000140000001c000000140000001d0000001c00000014000000150000001d000000150000001e0000001d00000015000000160000001e000000160000001f0000001e00000016000000170000001f00000017000000200000001f000000170000001800000020000000180000002100000020000000180000001900000021000000190000002200000021000000190000001a000000220000001a00000023000000220000001b0000001c000000240000001c00000025000000240000001c0000001d000000250000001d00000026000000250000001d0000001e000000260000001e00000027000000260000001e0000001f000000270000001f00000028000000270000001f0000002000000028000000200000002900000028000000200000002100000029000000210000002a0000002900000021000000220000002a000000220000002b0000002a00000022000000230000002b000000230000002c0000002b00000024000000250000002d000000250000002e0000002d00000025000000260000002e000000260000002f0000002e00000026000000270000002f00000027000000300000002f000000270000002800000030000000280000003100000030000000280000002900000031000000290000003200000031000000290000002a000000320000002a00000033000000320000002a0000002b000000330000002b00000034000000330000002b0000002c000000340000002c00000035000000340000002d0000002e000000360000002e00000037000000360000002e0000002f000000370000002f00000038000000370000002f0000003000000038000000300000003900000038000000300000003100000039000000310000003a0000003900000031000000320000003a000000320000003b0000003a00000032000000330000003b000000330000003c0000003b00000033000000340000003c000000340000003d0000003c00000034000000350000003d000000350000003e0000003d00000036000000370000003f00000037000000400000003f000000370000003800000040000000380000004100000040000000380000003900000041000000390000004200000041000000390000003a000000420000003a00000043000000420000003a0000003b000000430000003b00000044000000430000003b0000003c000000440000003c00000045000000440000003c0000003d000000450000003d00000046000000450000003d0000003e000000460000003e00000047000000460000003f0000004000000048000000400000004900000048000000400000004100000049000000410000004a0000004900000041000000420000004a000000420000004b0000004a00000042000000430000004b000000430000004c0000004b00000043000000440000004c000000440000004d0000004c00000044000000450000004d000000450000004e0000004d00000045000000460000004e000000460000004f0000004e00000046000000470000004f00000047000000500000004f000000480000004900000051000000490000005200000051000000490000004a000000520000004a00000053000000520000004a0000004b000000530000004b00000054000000530000004b0000004c000000540000004c00000055000000540000004c0000004d000000550000004d00000056000000550000004d0000004e000000560000004e00000057000000560000004e0000004f000000570000004f00000058000000570000004f000000500000005800000050000000590000005800000051000000520000005a000000520000005b0000005a00000052000000530000005b000000530000005c0000005b00000053000000540000005c000000540000005d0000005c00000054000000550000005d000000550000005e0000005d00000055000000560000005e000000560000005f0000005e00000056000000570000005f00000057000000600000005f0000005700000058000000600000005800000061000000600000005800000059000000610000005900000062000000610000005a0000005b000000630000005b00000064000000630000005b0000005c000000640000005c00000065000000640000005c0000005d000000650000005d00000066000000650000005d0000005e000000660000005e00000067000000660000005e0000005f000000670000005f00000068000000670000005f0000006000000068000000600000006900000068000000600000006100000069000000610000006a0000006900000061000000620000006a000000620000006b0000006a00000063000000640000006c000000640000006d0000006c00000064000000650000006d000000650000006e0000006d00000065000000660000006e000000660000006f0000006e00000066000000670000006f00000067000000700000006f000000670000006800000070000000680000007100000070000000680000006900000071000000690000007200000071000000690000006a000000720000006a00000073000000720000006a0000006b000000730000006b0000007400000073000000
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 117
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 5616
+    _typelessdata: ed69bcbd30a291bf83d38dbe55cbe0bbe17a9f3820e699bc657d90bc56cbe03bf0f5d33b0000803f000000000000000057d7d1bdf70391bfc8aa88be7be88dbc30b7a03bdfb40ebcb3b9f9bb08319d3bee4a923c0000803f0000000000000000917cd2bde3c390bf49e580be657d90bc55cbe03bf2f5d33b57cbe03b227b9fb820e6993c0000803f0000000000000000d3f8bdbd7d0791bfe42076beb3b9f9bb08319d3bee4a923c7be88d3c31b7a0bbdfb40e3c0000803f00000000000000008250a0bd2ca791bf7e2d75be59cbe03b347b9fb820e6993c657d903c56cbe0bbf5f5d3bb0000803f000000000000000019e38abd654592bff47e7fbe7be88d3c32b7a0bbdcb40e3cadb9f93b06319dbbee4a92bc0000803f0000000000000000df3d8abd798592bff98487be657d903c55cbe0bbf0f5d3bb55cbe0bbf97a9f3820e699bc0000803f00000000000000009ec19ebddf4192bfd0598dbea5b9f93b05319dbbef4a92bc7ce88dbc34b7a03bd8b40ebc0000803f0000000000000000ee69bcbd30a291bf83d38dbe5ccbe0bb867b9f3820e699bc657d90bc56cbe03bf8f5d33b0000803f0000000000000000861d54bcde8368bfee1f9cbea7cfe6bb49ce0fbad54699bcb8c313bdc3342b3cb67d593c0000803f00000000000000001b13c2bc368667bfeee796be42b891bcdcb3593b938d0bbce0677fbc28b8053c3362123d0000803f00000000000000001fbbc4bc160867bff0218fbe466094bc2aeaab3b2764da3b1cdc653c86368f3a18a5183d0000803f0000000000000000eef060bc5e5367bfac5b89be3c3b00bcd745863b4dfd923c801e113d26ced8bb50fa8a3c0000803f00000000000000001891953af63b68bf14f788beabcfe63b42ce0f3ad546993cb8c3133dc4342bbcba7d59bc0000803f0000000000000000d2ba423c9e3969bf152f8ebe42b8913ce0b359bb8f8d0b3cd8677f3c26b805bc346212bd0000803f0000000000000000da0a483cbeb769bf12f595be4660943c2aeaabbb2664dabb1bdc65bc88368fba18a518bd0000803f00000000000000001c2cfc3a766c69bf56bb9bbe363b003cd44586bb4ffd92bc821e11bd2cced83b4afa8abc0000803f00000000000000008a1d54bcde8368bfee1f9cbeaecfe6bb39ce0fbad44699bcb7c313bdc3342b3cbd7d593c0000803f0000000000000000de85af3c63dd2dbfe75caabe2a7dedbb5fdf0cbb6baf97bcbe4d17bdcb2d103b07b5683c0000803f0000000000000000d4e3293cb0802dbfd6fda4be3ff395bc37ae40bac87c03bcd0c582bcd0ae953be66b133d0000803f00000000000000006069243cc4072dbf96369dbe79b098bcd67f913a9dd6ea3b6e556b3c16988b3b054f163d0000803f0000000000000000f6e8a83c76b92cbf989597be67f803bcc00d173b87c5943ce196143d95eebe3a4d4b823c0000803f00000000000000003a22133da5c32cbff96697be2e7ded3b5edf0c3b6baf973cbe4d173dcd2d10bb0bb568bc0000803f0000000000000000346c403d58202dbf0ac69cbe3ff3953c30ae403ac47c033cccc5823cd0ae95bbe66b13bd0000803f0000000000000000d1ca413d44992dbf4a8da4be79b0983cd67f91ba9cd6eabb6d556bbc16988bbb054f16bd0000803f0000000000000000ad70163d92e72dbf492eaabe61f8033cc10d17bb89c594bce39614bd89eebeba474b82bc0000803f0000000000000000dd85af3c63dd2dbfe75caabe307dedbb5edf0cbb6baf97bcbe4d17bdce2d103b0db5683c0000803f0000000000000000e12be5bb1803e6bed099b8be7e2ce8bbcb1a76bb021896bc1ea414bd1a50c6bbeb3f7a3c0000803f00000000000000001ad591bc8b8ce6beb013b3be419592bc5e6a9dbbfbd7f6bb747680bc744e843ae5ee153d0000803f0000000000000000728194bc26a5e5be2c4babbe994195bc332247bb1349fb3b8637673c1d17f53ba179153d0000803f000000000000000081fcfebb75d4e3be74cfa5be8ffe00bcaeda043ac18d963c96fa113d46c41c3c83d3753c0000803f00000000000000001f2deb3bac2ae2bed0d6a5be822ce83bcc1a763b0118963c1da4143d1850c63bef3f7abc0000803f00000000000000006955933c39a1e1bef05cabbe4295923c5e6a9d3bf3d7f63b7076803c854e84bae6ee15bd0000803f0000000000000000c001963c9e88e2be7425b3be9941953c3422473b1249fbbb853767bc1d17f5bba17915bd0000803f0000000000000000d77e023c4f59e4be2ca1b8be89fe003ccada04bac28d96bc97fa11bd45c41cbc77d375bc0000803f0000000000000000e82be5bb1803e6bed099b8be852ce8bbce1a76bb011896bc1da414bd1750c6bbf33f7a3c0000803f0000000000000000c0faa3bdfbfe5ebe4be6c6be98b0e2bb33ab8fbbb77895bccfb611bd1fd518bca7db803c0000803f0000000000000000af96b9bde50e61bee550c1bee01b8fbc74a8d1bb5e89f0bb07d97bbc215acfb92240173d0000803f00000000000000006a3dbabd4a485fbee387b9becdb691bc1cd598bba8db003c9ab0623c34ab0f3cb678153d0000803f0000000000000000478da5bd77b55abebe1ab4be05d9fbbbeb594fb92340973ce11b0f3d76a8513c5d89703c0000803f0000000000000000ada487bd470456be3537b4be9cb0e23b34ab8f3bb678953cceb6113d1ed5183ca9db80bc0000803f00000000000000007e1164bd5df453be9bccb9bee01b8f3c74a8d13b5889f03b01d97b3ce759cf39224017bd0000803f000000000000000008c462bdf8ba55be9d95c1becdb6913c1dd5983ba7db00bc98b062bc33ab0fbcb67815bd0000803f0000000000000000281286bdcb4d5abec202c7bef7d8fb3b5c594f39244097bce21b0fbd76a851bc4e8970bc0000803f0000000000000000c1faa3bdfbfe5ebe4be6c6be9eb0e2bb35ab8fbbb67895bcceb611bd1ed518bcabdb803c0000803f000000000000000040291dbe7f21753ca046d5be862ce8bb9b1a76bb021896bc19a414bd8050c6bbf23f7a3c0000803f0000000000000000843a28beedf2633c80c0cfbe409592bc726a9dbbf7d7f6bb6c7680bcc44c843ae5ee153d0000803f00000000000000000f9028bec06f803cfcf7c7be974195bc9c2247bb1c49fb3b8c37673ced16f53ba179153d0000803f0000000000000000c5f71dbedb7a9d3c447cc2be89fe00bcfdd8043ac48d963c95fa113d5ac41c3c7ed3753c0000803f000000000000000078a60ebe6617b83ca083c2be8a2ce83b9c1a763b0218963c19a4143d7f50c63bf63f7abc0000803f0000000000000000349503beb0aec03cc009c8be4195923c726a9d3befd7f63b6876803cd54c84bae6ee15bd0000803f0000000000000000a93f03be6738b23c44d2cfbe9741953c9d22473b1b49fbbb8a3767bced16f5bba17915bd0000803f0000000000000000f4d70dbe4a2d953cfc4dd5be82fe003c17d904bac58d96bc96fa11bd59c41cbc70d375bc0000803f000000000000000040291dbe7f21753ca046d5be8c2ce8bb9d1a76bb021896bc19a414bd7f50c6bbf83f7a3c0000803f000000000000000066983abe480b7e3e76b6e3be307dedbb60df0cbb6baf97bcbe4d17bdc62d103b0cb5683c0000803f0000000000000000e4ea45be187e7f3e6557debe40f395bc40ae40bac47c03bcccc582bccfae953be66b133d0000803f00000000000000008b4246bee3b0803e2490d6be79b098bcd47f913aa5d6ea3b75556b3c18988b3b044f163d0000803f0000000000000000026c3bbe7e4d813e27efd0be64f803bcc00d173b87c5943ce096143da1eebe3a494b823c0000803f000000000000000092c02bbe2239813e88c0d0be347ded3b5fdf0c3b6aaf973cbd4d173dc82d10bb10b568bc0000803f0000000000000000146e20beba7f803e991fd6be40f3953c39ae403ac07c033cc8c5823ccfae95bbe66b13bd0000803f00000000000000006d1620bec61b7f3edae6ddbe79b0983cd37f91baa3d6eabb73556bbc18988bbb044f16bd0000803f0000000000000000f6ec2abe8fe27d3ed887e3be5ff8033cc10d17bb8ac594bce39614bd96eebeba444b82bc0000803f000000000000000066983abe490b7e3e76b6e3be377dedbb5fdf0cbb6aaf97bcbd4d17bdc92d103b13b5683c0000803f0000000000000000f9fa16be4af6f53e5c26f2beaccfe6bb4ece0fbad44699bcb5c313bdce342b3cb87d593c0000803f000000000000000084fb21be99f1f73e5ceeecbe42b891bcf0b3593b908d0bbcd5677fbc30b8053c3362123d0000803f0000000000000000855022bedaedf83e5e28e5be466094bc38eaab3b2c64da3b22dc653c8f368f3a18a5183d0000803f000000000000000030c817be4957f83e1a62dfbe393b00bce145863b4efd923c801e113d35ced8bb4efa8a3c0000803f0000000000000000fe8d08be1886f63e82fddebeb0cfe63b46ce0f3ad446993cb5c3133dce342bbcbc7d59bc0000803f0000000000000000e71afbbdc98af43e8335e4be43b8913cf3b359bb8d8d0b3ccf677f3c2fb805bc346212bd0000803f0000000000000000e670fabd888ef33e80fbebbe4660943c38eaabbb2b64dabb21dc65bc91368fba18a518bd0000803f0000000000000000c9c007be1a25f43ec4c1f1be333b003cdf4586bb4ffd92bc811e11bd3aced83b48fa8abc0000803f0000000000000000fafa16be4af6f53e5c26f2beb3cfe6bb3ece0fbad44699bcb5c313bdcf342b3cbf7d593c0000803f0000000000000000e0f29abd0fb0333f282dfcbe49836dbced1c16bc1d9b28bcd2177fbb76e31b3cd5d043bb0000803f0000000000000000a0c89cbda797373f70a7fcbe45317cbc2592c73b30e437bc8236333b0b0c273ccc9be93a0000803f0000000000000000fb268cbd6f953a3ff4c3f9be4348eebb8f9d913c55e9b6bbeb44fe3b0cb4a03b4180b43b0000803f00000000000000000a9865bdd2e83a3fe233f5be2067a73be4099c3cb0365a3b04fe063c86a655bb63ddc43b0000803f00000000000000001c243fbdf760383f76a3f1be4a836d3ceb1c163c1d9b283ccf177f3b76e31bbcd2d0433b0000803f00000000000000009e783bbd5f79343f2e29f1be42317c3c2d92c7bb2fe4373c893633bb090c27bcd69be9ba0000803f0000000000000000e5bb5cbd977b313faa0cf4be4548ee3b8f9d91bc57e9b63beb44febb0db4a0bb4180b4bb0000803f0000000000000000eab887bd3428313fbd9cf8be2b67a7bbe2099cbcc1365abb02fe06bc95a6553b60ddc4bb0000803f0000000000000000e0f29abd0fb0333f282dfcbe4a836dbce91c16bc1e9b28bccb177fbb77e31b3cd0d043bb0000803f0000000000000000cbdfabbdcc8be83e39ca11bf50c6a3bc2d4b9e392151fab9f48f8a3a724a0d3c1dfa1ebd0000803f0000000000000000bc1c9fbd1d12ea3e7f4915bf297461bc12f2563be7a367bc5b6cec3c3ee7b93bd553dbbc0000803f000000000000000082d781bd9b9cea3e00aa16bf635a0b3a9c188e3b19e29fbcb0d8223daf651dba63e6783a0000803f0000000000000000176b4abd26dae93e3f1d15bf5cc56d3c85f63a3be5935cbc0e2de03c3abad5bbd053e63c0000803f000000000000000046f933bda63ce83ea58b11bf50c6a33c3a4b9eb95c51fa3912908aba724a0dbc1dfa1e3d0000803f0000000000000000647f4dbd55b6e63e5f0c0ebf2674613c14f256bbeaa3673c5e6cecbc3be7b9bbd353db3c0000803f0000000000000000ec0484bdd72be63edeab0cbf585a0bba9c188ebb19e29f3cb0d822bdab651d3a4ee678ba0000803f0000000000000000e3a6a0bd4ceee63ea0380ebf60c56dbc7ef63abbe0935c3c092de0bc3dbad53bd453e6bc0000803f0000000000000000cbdfabbdcc8be83e39ca11bf50c6a3bc474b9e399751fab930908a3a724a0d3c1dfa1ebd0000803f00000000000000006289b0bd8be8493e343719bfacc7a3bcde8f7339cf3500ba6739863a3ba2923be9c122bd0000803f00000000000000007acda3bd73754b3e83c61cbf19b061bc3ee6e43a0bd76bbc428ded3ce0d7393bf481e0bc0000803f0000000000000000048b86bd30f64b3e362d1ebfa639063a39a2123bebc1a2bcacc7233d1f90f3b90b36803a0000803f00000000000000009ecb53bd571f4b3e2f991cbf428d6d3ce2d7b93af98160bc1bb0e13c45e664bb08d7eb3c0000803f0000000000000000184b3dbdc36e493e1af718bfacc7a33cec8f73b9ed35003a863986ba3ba292bbe9c1223d0000803f0000000000000000e8c256bddae1473ecb6715bf17b0613c40e6e4ba0cd76b3c448dedbcded739bbf281e03c0000803f0000000000000000eaa388bd1e61473e180114bf9b3906ba39a212bbebc1a23cacc723bd1a90f339003680ba0000803f00000000000000002049a5bdf737483e1f9515bf478d6dbcded7b9baf481603c16b0e1bc49e6643b0dd7ebbc0000803f00000000000000006289b0bd8be8493e353719bfacc7a3bcf98f73390a3600baa339863a3ba2923be9c122bd0000803f0000000000000000a232b5bdc0d074bd6ca320bfacc7a3bcde8f7339cf3500ba1c39863ab49a923bfbc122bd0000803f0000000000000000ba76a8bd1e9d6ebdbb3224bf19b061bc3ee6e43a0bd76bbcb38ced3cce0b383b6588e0bc0000803f000000000000000044348bbd2c9a6cbd6e9925bfa639063a39a2123bebc1a2bc49c7233d5fb603ba234d7f3a0000803f00000000000000001e1e5dbd91f56fbd670524bf428d6d3ce2d7b93af98160bc92afe13c0a9d66bbcad0eb3c0000803f0000000000000000989d46bde0b776bd526320bfacc7a33cec8f73b9ed35003a3a3986bab39a92bbfbc1223d0000803f0000000000000000681560bd82eb7cbd03d41cbf17b0613c40e6e4ba0cd76b3cb48cedbccc0b38bb6388e03c0000803f00000000000000002a4d8dbd74ee7ebd506d1bbf9b3906ba39a212bbebc1a23c49c723bd5db6033a0e4d7fba0000803f000000000000000060f2a9bd0f937bbd57011dbf478d6dbcded7b9baf481603c8dafe1bc0f9d663bcfd0ebbc0000803f0000000000000000a232b5bdc0d074bd6da320bfacc7a3bcf98f73390a3600ba5739863ab39a923bfbc122bd0000803f000000000000000062debabdd127a2beab0f28bfacc7a3bcde8f7339cf3500bacf38063a2793123b0cc2a2bc0000803f00000000000000007a22aebd5d61a1befa9e2bbf19b061bc3ee6e43a0bd76bbc228c6d3cb53fb63ad48e60bc0000803f000000000000000004e090bdff20a1bead052dbfa639063a39a2123bebc1a2bce4c6a33caaa48db9302efe390000803f00000000000000009e7568bd6b8ca1bea6712bbf428d6d3ce2d7b93af98160bc08af613cc853e8ba8bca6b3c0000803f000000000000000018f551bdb564a2be91cf27bfacc7a33cec8f73b9ed35003aee3806ba279312bb0cc2a23c0000803f0000000000000000e86c6bbd292ba3be424024bf17b0613c40e6e4ba0cd76b3c238c6dbcb33fb6bad28e603c0000803f0000000000000000eaf892bd876ba3be8fd922bf9b3906ba39a212bbebc1a23ce4c6a3bca8a48d391b2efeb90000803f0000000000000000209eafbd1b00a3be966d24bf478d6dbcded7b9baf481603c03af61bccc53e83a90ca6bbc0000803f000000000000000062debabdd127a2beac0f28bfacc7a3bcf98f73390a3600ba0b39063a2693123b0cc2a2bc0000803f0000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: -0.07315033, y: -0.2072916, z: -0.4576496}
+    m_Extent: {x: 0.12046289, y: 0.93740666, z: 0.21821825}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &324119723
 GameObject:
   m_ObjectHideFlags: 0
@@ -4173,7 +4337,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
@@ -4185,7 +4349,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: SetOilType
         m_Mode: 3
@@ -4318,7 +4482,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
@@ -4745,7 +4909,7 @@ RectTransform:
   - {fileID: 242432640}
   - {fileID: 243644491}
   m_Father: {fileID: 1476269232}
-  m_RootOrder: 10
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6942,26 +7106,50 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
-        m_MethodName: ChooseNumber
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 90000
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalPayment
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalOilInputTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7596,26 +7784,50 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
-        m_MethodName: ChooseNumber
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 50000
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalPayment
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalOilInputTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8184,7 +8396,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958511056}
-  m_Mesh: {fileID: 1253757289}
+  m_Mesh: {fileID: 1642352196}
 --- !u!114 &958511061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9004,26 +9216,50 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
-        m_MethodName: ChooseNumber
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 70000
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalPayment
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalOilInputTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9788,7 +10024,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
@@ -10055,7 +10291,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
@@ -10322,14 +10558,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -2
+          m_IntArgument: -4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10613,14 +10849,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -2
+          m_IntArgument: -4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -11095,170 +11331,6 @@ Transform:
   m_Father: {fileID: 2719906052508392660}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!43 &1253757289
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: cable
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 576
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 117
-    localAABB:
-      m_Center: {x: -0.05940433, y: -0.20697698, z: -0.45759854}
-      m_Extent: {x: 0.1274635, y: 0.9374572, z: 0.21826127}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 0
-  m_KeepIndices: 0
-  m_IndexFormat: 1
-  m_IndexBuffer: 000000000100000009000000010000000a0000000900000001000000020000000a000000020000000b0000000a00000002000000030000000b000000030000000c0000000b00000003000000040000000c000000040000000d0000000c00000004000000050000000d000000050000000e0000000d00000005000000060000000e000000060000000f0000000e00000006000000070000000f00000007000000100000000f000000070000000800000010000000080000001100000010000000090000000a000000120000000a00000013000000120000000a0000000b000000130000000b00000014000000130000000b0000000c000000140000000c00000015000000140000000c0000000d000000150000000d00000016000000150000000d0000000e000000160000000e00000017000000160000000e0000000f000000170000000f00000018000000170000000f0000001000000018000000100000001900000018000000100000001100000019000000110000001a0000001900000012000000130000001b000000130000001c0000001b00000013000000140000001c000000140000001d0000001c00000014000000150000001d000000150000001e0000001d00000015000000160000001e000000160000001f0000001e00000016000000170000001f00000017000000200000001f000000170000001800000020000000180000002100000020000000180000001900000021000000190000002200000021000000190000001a000000220000001a00000023000000220000001b0000001c000000240000001c00000025000000240000001c0000001d000000250000001d00000026000000250000001d0000001e000000260000001e00000027000000260000001e0000001f000000270000001f00000028000000270000001f0000002000000028000000200000002900000028000000200000002100000029000000210000002a0000002900000021000000220000002a000000220000002b0000002a00000022000000230000002b000000230000002c0000002b00000024000000250000002d000000250000002e0000002d00000025000000260000002e000000260000002f0000002e00000026000000270000002f00000027000000300000002f000000270000002800000030000000280000003100000030000000280000002900000031000000290000003200000031000000290000002a000000320000002a00000033000000320000002a0000002b000000330000002b00000034000000330000002b0000002c000000340000002c00000035000000340000002d0000002e000000360000002e00000037000000360000002e0000002f000000370000002f00000038000000370000002f0000003000000038000000300000003900000038000000300000003100000039000000310000003a0000003900000031000000320000003a000000320000003b0000003a00000032000000330000003b000000330000003c0000003b00000033000000340000003c000000340000003d0000003c00000034000000350000003d000000350000003e0000003d00000036000000370000003f00000037000000400000003f000000370000003800000040000000380000004100000040000000380000003900000041000000390000004200000041000000390000003a000000420000003a00000043000000420000003a0000003b000000430000003b00000044000000430000003b0000003c000000440000003c00000045000000440000003c0000003d000000450000003d00000046000000450000003d0000003e000000460000003e00000047000000460000003f0000004000000048000000400000004900000048000000400000004100000049000000410000004a0000004900000041000000420000004a000000420000004b0000004a00000042000000430000004b000000430000004c0000004b00000043000000440000004c000000440000004d0000004c00000044000000450000004d000000450000004e0000004d00000045000000460000004e000000460000004f0000004e00000046000000470000004f00000047000000500000004f000000480000004900000051000000490000005200000051000000490000004a000000520000004a00000053000000520000004a0000004b000000530000004b00000054000000530000004b0000004c000000540000004c00000055000000540000004c0000004d000000550000004d00000056000000550000004d0000004e000000560000004e00000057000000560000004e0000004f000000570000004f00000058000000570000004f000000500000005800000050000000590000005800000051000000520000005a000000520000005b0000005a00000052000000530000005b000000530000005c0000005b00000053000000540000005c000000540000005d0000005c00000054000000550000005d000000550000005e0000005d00000055000000560000005e000000560000005f0000005e00000056000000570000005f00000057000000600000005f0000005700000058000000600000005800000061000000600000005800000059000000610000005900000062000000610000005a0000005b000000630000005b00000064000000630000005b0000005c000000640000005c00000065000000640000005c0000005d000000650000005d00000066000000650000005d0000005e000000660000005e00000067000000660000005e0000005f000000670000005f00000068000000670000005f0000006000000068000000600000006900000068000000600000006100000069000000610000006a0000006900000061000000620000006a000000620000006b0000006a00000063000000640000006c000000640000006d0000006c00000064000000650000006d000000650000006e0000006d00000065000000660000006e000000660000006f0000006e00000066000000670000006f00000067000000700000006f000000670000006800000070000000680000007100000070000000680000006900000071000000690000007200000071000000690000006a000000720000006a00000073000000720000006a0000006b000000730000006b0000007400000073000000
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 117
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 40
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 5616
-    _typelessdata: c19183bdbea891bfd7df8dbe6c24d8bb5c0f02b967ab9abce72092bc6b24d83b67c9ca3b0000803f0000000000000000df7199bdb80e91bf73cd88be92898dbc34f6953b330a13bc373d02bca9b59b3b4237913c0000803f0000000000000000b4979abd8acc90bffb0981bee72092bc6c24d83b69c9ca3b6d24d83b2e0f023967ab9a3c0000803f0000000000000000215786bdf80891bf5a4376be373d02bca9b59b3b4237913c92898d3c33f695bb330a133c0000803f0000000000000000671a51bd9ea091bfd51475be7024d83b340f023967ab9a3ce720923c6c24d8bb6bc9cabb0000803f00000000000000002c5a25bda43a92bf9f397fbe93898d3c36f695bb2f0a133c333d023ca7b59bbb433791bc0000803f0000000000000000820e23bdd27c92bf476087bee720923c6c24d8bb67c9cabb6b24d8bb420f02b967ab9abc0000803f0000000000000000a98f4bbd644092bf95488dbe303d023ca6b59bbb443791bc94898dbc37f6953b2c0a13bc0000803f0000000000000000c29183bdbea891bfd7df8dbe7324d8bb0d0f02b967ab9abce72092bc6c24d83b6fc9ca3b0000803f000000000000000005b13a3c554468bfa52c9cbe62a2ddbb4b9f3eba3d129abc993815bd0311223c2564503c0000803f000000000000000080d8e7393a5067bfc30a97beb92191bc9872443b44e80fbc71fe84bcab60033c9f55113d0000803f000000000000000000cd0ab934cf66bf7d468fbeb5d695bcbcbca23bf440d13b84b85c3c1dd6bd3aa96f193d0000803f0000000000000000dbf6233cd50c67bf876c89be5b8b05bce0eb833b9eef913c9588103d4fa3c3bb69508f3c0000803f0000000000000000b429cc3c05e567bf5dea88be66a2dd3b449f3e3a3d129a3c9938153d031122bc296450bc0000803f00000000000000006bf1123d20d968bf3f0c8ebebb21913c9c7244bb41e80f3c6efe843caa6003bca15511bd0000803f0000000000000000e84b153d265a69bf85d095beb5d6953cbcbca2bbf340d1bb83b85cbc1fd6bdbaa96f19bd0000803f0000000000000000c586d73c851c69bf7baa9bbe548b053cdeeb83bba0ef91bc978810bd56a3c33b62508fbc0000803f000000000000000002b13a3c554468bfa52c9cbe69a2ddbb3c9f3eba3d129abc993815bd0311223c2c64503c0000803f0000000000000000d0852d3d467a2dbf986aaabeec4de3bb9bb714bb808a98bc4f4618bd6099cf3ababe5f3c0000803f00000000000000006107ff3cae292dbf1a21a5bebbd794bc903f88ba31e507bcc8b687bc3be78c3bd26f123d0000803f0000000000000000c733fa3c2eb12cbfc35a9dbe55ab99bc2280513a52cbe13bd33d613c155e933b1a28173d0000803f000000000000000050b2273d5c572cbf7ea597bef8f408bc9a310e3b27c7933cec7d133d0103073b76a9863c0000803f00000000000000004c59663dd6502cbf485997bef04de33b9bb7143b808a983c4f46183d6499cfbabebe5fbc0000803f0000000000000000b62d8a3d6ea12cbfc7a29cbebbd7943c8d3f883a2ee5073cc5b6873c3be78cbbd26f12bd0000803f00000000000000009c628b3dee192dbf1d69a4be55ab993c218051ba50cbe1bbd13d61bc155e93bb1a2817bd0000803f0000000000000000cb2c6c3dc0732dbf631eaabef3f4083c9b310ebb29c793bcee7d13bdfd0207bb71a986bc0000803f0000000000000000d0852d3d467a2dbf986aaabef44de3bb9bb714bb808a98bc4f4618bd6899cf3ac2be5f3c0000803f00000000000000009c612c3c1270e5be7ca8b8be3571ddbbf8bb79bbc50297bc861715bdaeb1dbbbf355713c0000803f0000000000000000001cddb9c215e6be6137b3be8b0191bc184aa6bb45c4ffbbfae084bc391c243ad200153d0000803f0000000000000000208682bacf35e5bef96eabbe7db595bc709a5cbba655f23b8e875c3c76b4f83b6f63163d0000803f000000000000000073ac153c6753e3be65dea5bec36d05bc24caa439b09e953c8a68103da39a253c66b67e3c0000803f000000000000000069e9c43c2289e1be24c8a5be3971dd3bf9bb793bc402973c8517153dabb1db3bf75571bc0000803f000000000000000053470f3d72e3e0be3f39abbe8b01913c184aa63b3ec4ff3bf6e0843c521c24bad20015bd0000803f00000000000000004ca1113d65c3e1bea701b3be7db5953c729a5c3ba555f2bb8d875cbc75b4f8bb6f6316bd0000803f0000000000000000f943d03ccda5e3be3b92b8bebc6d053c5ccaa4b9b29e95bc8c6810bda39a25bc58b67ebc0000803f000000000000000098612c3c1270e5be7ca8b8be3c71ddbbfbbb79bbc40297bc851715bdaab1dbbbfa55713c0000803f0000000000000000fc2687bd57f75ebe5af5c6be18e0d7bbcd9b90bb9c6996bcb7f211bd23a623bc2ecd783c0000803f000000000000000030009dbd3e4261bec274c1bed45c8dbc94f8d9bb7080f9bb0d1482bce46a57ba0b57163d0000803f0000000000000000a8259ebdaa8f5fbe8babb9beb7f291bc22a6a3bb2ccdf83b17e0573ccc9b103c9d69163d0000803f00000000000000007ceb89bd2ede5abe4f29b4be0c1402bcd76ad7b90b57963cd45c0d3d93f8593c6f80793c0000803f0000000000000000f25558bd9bed55be2628b4be1ce0d73bcd9b903b9b69963cb6f2113d21a6233c32cd78bc0000803f00000000000000008aa32cbdb4a253bebea8b9bed65c8d3c94f8d93b6980f93b0a14823cb26a573a0d5716bd0000803f00000000000000009a582abd485555bef571c1beb7f2913c22a6a33b2bcdf8bb16e057bccc9b10bc9d6916bd0000803f0000000000000000f4cc52bdc4065abe31f4c6be0614023c856ad7390d5796bcd65c0dbd94f859bc628079bc0000803f0000000000000000fc2687bd57f75ebe5af5c6be1ee0d7bbcf9b90bb9b6996bcb6f211bd21a623bc34cd783c0000803f0000000000000000284612be3cd5623c4c55d5be4171ddbbaabb79bbc60297bc851715bdcfb1dbbbf855713c0000803f0000000000000000cf7a1dbe221f4e3c31e4cfbe8b0191bc094aa6bb45c4ffbbf4e084bcb819243ad200153d0000803f00000000000000004d111ebe811d6a3cc91bc8be7bb595bc939a5cbbaa55f23b9a875c3c27b4f83b6f63163d0000803f00000000000000007ab113be3235933c358bc2bebd6d05bca9c7a439b19e953c8b68103d929a253c66b67e3c0000803f0000000000000000146f04be88d9af3cf474c2be4571dd3babbb793bc502973c8417153dcdb1db3bfc5571bc0000803f0000000000000000d974f2bd9534ba3c0fe6c7be8d01913c094aa63b3ec4ff3bf1e0843ce01924bad40015bd0000803f0000000000000000dd47f1bd6635ac3c77aecfbe7bb5953c949a5c3ba955f2bb99875cbc27b4f8bb6f6316bd0000803f0000000000000000c30303bef30e8e3c0b3fd5beb76d053ce1c7a4b9b39e95bc8d6810bd939a25bc5ab67ebc0000803f0000000000000000284612be3bd5623c4c55d5be4771ddbbacbb79bbc50297bc841715bdccb1dbbbfe55713c0000803f00000000000000004e3f33be685e7c3e27c4e3bef44de3bb9bb714bb808a98bc4f4618bd6599cf3ac2be5f3c0000803f0000000000000000d6bf3ebec7a07d3ea87adebebcd794bc8e3f88ba2ee507bcc5b687bc3ce78c3bd36f123d0000803f0000000000000000485a3fbec6827f3e52b4d6be54ab99bc2680513a58cbe13bd93d613c145e933b1928173d0000803f00000000000000002db434be0675803e0dffd0bef6f408bc9a310e3b27c7933cec7d133d0103073b74a9863c0000803f00000000000000006e0a25be1282803ed7b2d0bef84de33b9bb7143b7f8a983c4e46183d6999cfbac6be5fbc0000803f0000000000000000e68919bec5c17f3e56fcd5bebcd7943c8a3f883a2ae5073cc1b6873c3ce78cbbd36f12bd0000803f000000000000000074ef18bec6df7d3eacc2ddbe54ab993c258051ba57cbe1bbd83d61bc145e93bb192817bd0000803f00000000000000008f9523be80787c3ef277e3beeff4083c9b310ebb29c793bcee7d13bdfa0207bb6da986bc0000803f00000000000000004e3f33be685e7c3e27c4e3befc4de3bb9ab714bb7f8a98bc4e4618bd6d99cf3acabe5f3c0000803f0000000000000000312e13be9157f53e1333f2be6aa2ddbb549f3eba3d129abc983815bd1211223c2a64503c0000803f000000000000000055651ebec63ff73e3111edbeba2191bcab72443b41e80fbc6cfe84bcb660033ca055113d0000803f0000000000000000f4fb1ebed441f83eeb4ce5beb4d695bccbbca23bf840d13b8ab85c3c2ad6bd3aa96f193d0000803f0000000000000000d39914be91c6f73ef572dfbe568b05bcebeb833b9eef913c9588103d62a3c3bb66508f3c0000803f00000000000000000b5405be3116f63ecbf0debe6ea2dd3b4d9f3e3a3d129a3c9838153d131122bc2e6450bc0000803f0000000000000000cd39f4bdfc2df43ead12e4bebb21913cae7244bb3ee80f3c69fe843cb56003bca15511bd0000803f00000000000000008f0cf3bdee2bf33ef3d6ebbeb4d6953ccbbca2bbf740d1bb89b85cbc2cd6bdbaa96f19bd0000803f000000000000000069e803be31a7f33ee9b0f1be508b053ce9eb83bba0ef91bc978810bd68a3c33b60508fbc0000803f0000000000000000322e13be9157f53e1333f2be70a2ddbb459f3eba3c129abc973815bd1211223c3164503c0000803f0000000000000000e0989abd4a85333fc5edfbbe29b36abc34b322bcbdae20bc1a198cbbebf8153ca12746bb0000803f00000000000000002dbf9dbd6268373fbc88fcbec9f281bc9825ac3bab0d34bc84e5173b44b5263cd40ac73a0000803f0000000000000000abdd8dbdcb813a3febd7f9be85d904bc8f368e3c1be7bbbb5181f73bb593ab3b1273a93b0000803f0000000000000000bf8368bdc1003b3fd26ef5beb209903b3e159e3c8abe3c3bd509093c118a35bb8de0bd3b0000803f00000000000000002ad83fbde49a383fd9e2f1be2ab36a3c32b3223cbdae203c18198c3becf815bc9e27463b0000803f0000000000000000908b39bdccb7343fe247f1bec9f2813ca025acbbab0d343c8be517bb44b526bcde0ac7ba0000803f0000000000000000944e59bd639e313fb3f8f3be86d9043c8f368ebc1ce7bb3b5181f7bbb693abbb1273a9bb0000803f0000000000000000164386bd6d1f313fcc61f8bebd0990bb3e159ebc98be3cbbd50909bc1f8a353b8de0bdbb0000803f0000000000000000e0989abd4a85333fc5edfbbe2ab36abc30b322bcbeae20bc17198cbbecf8153c9c2746bb0000803f000000000000000019b7abbda273e83e9b7a11bf77baa3bce22205386d51413a03d5b9ba559d0d3c7fe91ebd0000803f000000000000000049c2a0bd3e05ea3ed31015bf70ce6fbcabe24a3b097959bcac05de3c89cfc63b133be9bc0000803f0000000000000000433e84bd29a9ea3e7aa916bf1de43abaea6b8e3b54d19fbcf6cc223d7c6084b8fb38c0ba0000803f000000000000000092be4dbd5cffe93e2c5515bf92495f3c8af1473b538f6abc9272ee3c5ebcc9bb923dd83c0000803f0000000000000000bab333bd506be83e43db11bf77baa33c4b2305b84f5141bae5d4b93a559d0dbc7fe91e3d0000803f00000000000000005a9d49bdb4d9e63e0b450ebf6ece6f3caee24abb0b79593cae05debc87cfc6bb113be93c0000803f0000000000000000b35281bdc935e63e64ac0cbf29e43a3aea6b8ebb54d19f3cf6cc22bd536084380639c03a0000803f0000000000000000aeb19ebd96dfe63eb2000ebf97495fbc86f147bb4e8f6a3c8d72eebc62bcc93b973dd8bc0000803f000000000000000019b7abbda273e83e9b7a11bf77baa3bcb32305383251413ac7d4b9ba559d0d3c7fe91ebd0000803f0000000000000000c485b0bd92d4493e18e618bf26b9a3bc00d5cd38473a443a0019c0ba4a4b933b05b122bd0000803f00000000000000006a98a5bda56d4b3ec98c1cbf7c0770bcdb66d93a8a685dbccd0cdf3c7735473badc0eebc0000803f0000000000000000ad1789bd04084c3eaf2c1ebf001940ba444b133b04b1a2bc25b9233d5ad44db9453ac4ba0000803f0000000000000000c26b57bd42494b3e2ad21cbfce0c5f3c6735c73aabc06ebc7a07f03cda6659bb8b68dd3c0000803f000000000000000063523dbd1ca1493e364819bf26b9a33c1bd5cdb82a3a44bae318c03a4a4b93bb05b1223d0000803f0000000000000000182d53bd0908483e85a115bf7907703cdc66d9ba8e685d3cd10cdfbc743547bbaac0ee3c0000803f0000000000000000491786bdaa6d473e9f0114bf0b19403a444b13bb04b1a23c25b923bd50d44d39503ac43a0000803f00000000000000001579a3bd6c2c483e245c15bfd30c5fbc6235c7baa6c06e3c7507f0bcde66593b9068ddbc0000803f0000000000000000c485b0bd92d4493e18e618bf26b9a3bc35d5cd380b3a443ac418c0ba494b933b05b122bd0000803f0000000000000000c454b5bd663e75bd505220bf26b9a3bc00d5cd38473a443aa818c0ba0854933be0b022bd0000803f00000000000000006a67aabd19da6ebd01f923bf7c0770bcdb66d93a8a685dbc6d0cdf3cdd03463bf5c4eebc0000803f0000000000000000ade68dbd9c706cbde79825bf001940ba444b133b04b1a2bcdeb8233d3bef69b9b99fc4ba0000803f0000000000000000c20961bda56b6fbd623e24bfce0c5f3c6735c73aabc06ebc1207f03c31b15abbdc63dd3c0000803f000000000000000063f046bd3b0c76bd6eb420bf26b9a33c1bd5cdb82a3a44ba8b18c03a085493bbe0b0223d0000803f000000000000000018cb5cbd87707cbdbd0d1dbf7907703cdc66d9ba8e685d3c710cdfbcda0346bbf2c4ee3c0000803f000000000000000049e68abd04da7ebdd76d1bbf0b19403a444b13bb04b1a23cdeb823bd31ef6939c49fc43a0000803f00000000000000001548a8bdfbde7bbd5cc81cbfd30c5fbc6235c7baa6c06e3c0d07f0bc35b15a3be163ddbc0000803f0000000000000000c454b5bd653e75bd505220bf26b9a3bc35d5cd380b3a443a6c18c0ba0854933be0b022bd0000803f0000000000000000c4dababd6639a2be8fbe27bf26b9a3bc00d5cd38473a443a501840bacc5c133bbcb0a2bc0000803f00000000000000006aedafbddc6ca1be40652bbf7c0770bcdb66d93a8a685dbc0c0c5f3c49d2c43a3cc96ebc0000803f0000000000000000ad6c93bdac1fa1be26052dbf001940ba444b133b04b1a2bc98b8a33c100503b92d0545ba0000803f0000000000000000c2156cbd0e7fa1bea1aa2bbfce0c5f3c6735c73aabc06ebcaa06703c8ffbdbba2c5f5d3c0000803f000000000000000063fc51bd2053a2bead2028bf26b9a33c1bd5cdb82a3a44ba3318403acc5c13bbbcb0a23c0000803f000000000000000018d767bdaa1fa3befc7924bf7907703cdc66d9ba8e685d3c100c5fbc46d2c4ba3ac96e3c0000803f0000000000000000496c90bdda6ca3be16da22bf0b19403a444b13bb04b1a23c98b8a3bc0b0503393805453a0000803f000000000000000015ceadbd780da3be9b3424bfd30c5fbc6235c7baa6c06e3ca50670bc93fbdb3a315f5dbc0000803f0000000000000000c4dababd6639a2be8fbe27bf26b9a3bc35d5cd380b3a443a141840bacc5c133bbcb0a2bc0000803f0000000000000000
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: -0.05940433, y: -0.20697698, z: -0.45759854}
-    m_Extent: {x: 0.1274635, y: 0.9374572, z: 0.21826127}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1001 &1263314498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11957,7 +12029,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
@@ -12090,26 +12162,50 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
-        m_MethodName: ChooseNumber
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 100000
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalPayment
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalOilInputTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -12635,26 +12731,50 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
-        m_MethodName: ChooseNumber
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 20000
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalPayment
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalOilInputTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -13273,7 +13393,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
@@ -13285,7 +13405,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: SetOilType
         m_Mode: 3
@@ -13418,7 +13538,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
@@ -13551,7 +13671,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
@@ -14029,7 +14149,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
@@ -14162,7 +14282,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
@@ -14295,7 +14415,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
@@ -14383,10 +14503,10 @@ RectTransform:
   - {fileID: 326096757}
   - {fileID: 583165702}
   - {fileID: 1405477497}
+  - {fileID: 543491351}
   - {fileID: 10144586}
   - {fileID: 1556109702}
   - {fileID: 93605292}
-  - {fileID: 543491351}
   - {fileID: 687568002}
   - {fileID: 1488621224}
   - {fileID: 1114272061}
@@ -14479,9 +14599,9 @@ MonoBehaviour:
   - {fileID: 942281235}
   - {fileID: 583165701}
   - {fileID: 1405477496}
+  - {fileID: 543491350}
   - {fileID: 10144585}
   - {fileID: 1556109701}
-  - {fileID: 543491350}
   - {fileID: 687568001}
   - {fileID: 1114272060}
   kioskPanelIndex: 0
@@ -14493,8 +14613,8 @@ MonoBehaviour:
   oilInputTimePerLitter: 0
   oilInputTime: 1
   lastPrice: 0
-  numberText: {fileID: 0}
-  toggleTypeText: {fileID: 0}
+  numberText: {fileID: 362950974}
+  toggleTypeText: {fileID: 896270934}
   resultNumber: 0
   oilType: 0
   toggleType: 1
@@ -14739,26 +14859,50 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
-        m_MethodName: ChooseNumber
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 60000
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalPayment
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalOilInputTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -15018,26 +15162,50 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
-        m_MethodName: ChooseNumber
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 40000
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalPayment
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalOilInputTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -15582,7 +15750,7 @@ RectTransform:
   - {fileID: 1457824382}
   - {fileID: 1603747033}
   m_Father: {fileID: 1476269232}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -16363,14 +16531,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -2
+          m_IntArgument: -5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -16622,6 +16790,170 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1621837493}
   m_CullTransparentMesh: 1
+--- !u!43 &1642352196
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: cable
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 576
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 117
+    localAABB:
+      m_Center: {x: -0.05940433, y: -0.20697698, z: -0.45759854}
+      m_Extent: {x: 0.1274635, y: 0.9374572, z: 0.21826127}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 0
+  m_KeepIndices: 0
+  m_IndexFormat: 1
+  m_IndexBuffer: 000000000100000009000000010000000a0000000900000001000000020000000a000000020000000b0000000a00000002000000030000000b000000030000000c0000000b00000003000000040000000c000000040000000d0000000c00000004000000050000000d000000050000000e0000000d00000005000000060000000e000000060000000f0000000e00000006000000070000000f00000007000000100000000f000000070000000800000010000000080000001100000010000000090000000a000000120000000a00000013000000120000000a0000000b000000130000000b00000014000000130000000b0000000c000000140000000c00000015000000140000000c0000000d000000150000000d00000016000000150000000d0000000e000000160000000e00000017000000160000000e0000000f000000170000000f00000018000000170000000f0000001000000018000000100000001900000018000000100000001100000019000000110000001a0000001900000012000000130000001b000000130000001c0000001b00000013000000140000001c000000140000001d0000001c00000014000000150000001d000000150000001e0000001d00000015000000160000001e000000160000001f0000001e00000016000000170000001f00000017000000200000001f000000170000001800000020000000180000002100000020000000180000001900000021000000190000002200000021000000190000001a000000220000001a00000023000000220000001b0000001c000000240000001c00000025000000240000001c0000001d000000250000001d00000026000000250000001d0000001e000000260000001e00000027000000260000001e0000001f000000270000001f00000028000000270000001f0000002000000028000000200000002900000028000000200000002100000029000000210000002a0000002900000021000000220000002a000000220000002b0000002a00000022000000230000002b000000230000002c0000002b00000024000000250000002d000000250000002e0000002d00000025000000260000002e000000260000002f0000002e00000026000000270000002f00000027000000300000002f000000270000002800000030000000280000003100000030000000280000002900000031000000290000003200000031000000290000002a000000320000002a00000033000000320000002a0000002b000000330000002b00000034000000330000002b0000002c000000340000002c00000035000000340000002d0000002e000000360000002e00000037000000360000002e0000002f000000370000002f00000038000000370000002f0000003000000038000000300000003900000038000000300000003100000039000000310000003a0000003900000031000000320000003a000000320000003b0000003a00000032000000330000003b000000330000003c0000003b00000033000000340000003c000000340000003d0000003c00000034000000350000003d000000350000003e0000003d00000036000000370000003f00000037000000400000003f000000370000003800000040000000380000004100000040000000380000003900000041000000390000004200000041000000390000003a000000420000003a00000043000000420000003a0000003b000000430000003b00000044000000430000003b0000003c000000440000003c00000045000000440000003c0000003d000000450000003d00000046000000450000003d0000003e000000460000003e00000047000000460000003f0000004000000048000000400000004900000048000000400000004100000049000000410000004a0000004900000041000000420000004a000000420000004b0000004a00000042000000430000004b000000430000004c0000004b00000043000000440000004c000000440000004d0000004c00000044000000450000004d000000450000004e0000004d00000045000000460000004e000000460000004f0000004e00000046000000470000004f00000047000000500000004f000000480000004900000051000000490000005200000051000000490000004a000000520000004a00000053000000520000004a0000004b000000530000004b00000054000000530000004b0000004c000000540000004c00000055000000540000004c0000004d000000550000004d00000056000000550000004d0000004e000000560000004e00000057000000560000004e0000004f000000570000004f00000058000000570000004f000000500000005800000050000000590000005800000051000000520000005a000000520000005b0000005a00000052000000530000005b000000530000005c0000005b00000053000000540000005c000000540000005d0000005c00000054000000550000005d000000550000005e0000005d00000055000000560000005e000000560000005f0000005e00000056000000570000005f00000057000000600000005f0000005700000058000000600000005800000061000000600000005800000059000000610000005900000062000000610000005a0000005b000000630000005b00000064000000630000005b0000005c000000640000005c00000065000000640000005c0000005d000000650000005d00000066000000650000005d0000005e000000660000005e00000067000000660000005e0000005f000000670000005f00000068000000670000005f0000006000000068000000600000006900000068000000600000006100000069000000610000006a0000006900000061000000620000006a000000620000006b0000006a00000063000000640000006c000000640000006d0000006c00000064000000650000006d000000650000006e0000006d00000065000000660000006e000000660000006f0000006e00000066000000670000006f00000067000000700000006f000000670000006800000070000000680000007100000070000000680000006900000071000000690000007200000071000000690000006a000000720000006a00000073000000720000006a0000006b000000730000006b0000007400000073000000
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 117
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 5616
+    _typelessdata: c19183bdbea891bfd7df8dbe6c24d8bb5c0f02b967ab9abce72092bc6b24d83b67c9ca3b0000803f0000000000000000df7199bdb80e91bf73cd88be92898dbc34f6953b330a13bc373d02bca9b59b3b4237913c0000803f0000000000000000b4979abd8acc90bffb0981bee72092bc6c24d83b69c9ca3b6d24d83b2e0f023967ab9a3c0000803f0000000000000000215786bdf80891bf5a4376be373d02bca9b59b3b4237913c92898d3c33f695bb330a133c0000803f0000000000000000671a51bd9ea091bfd51475be7024d83b340f023967ab9a3ce720923c6c24d8bb6bc9cabb0000803f00000000000000002c5a25bda43a92bf9f397fbe93898d3c36f695bb2f0a133c333d023ca7b59bbb433791bc0000803f0000000000000000820e23bdd27c92bf476087bee720923c6c24d8bb67c9cabb6b24d8bb420f02b967ab9abc0000803f0000000000000000a98f4bbd644092bf95488dbe303d023ca6b59bbb443791bc94898dbc37f6953b2c0a13bc0000803f0000000000000000c29183bdbea891bfd7df8dbe7324d8bb0d0f02b967ab9abce72092bc6c24d83b6fc9ca3b0000803f000000000000000005b13a3c554468bfa52c9cbe62a2ddbb4b9f3eba3d129abc993815bd0311223c2564503c0000803f000000000000000080d8e7393a5067bfc30a97beb92191bc9872443b44e80fbc71fe84bcab60033c9f55113d0000803f000000000000000000cd0ab934cf66bf7d468fbeb5d695bcbcbca23bf440d13b84b85c3c1dd6bd3aa96f193d0000803f0000000000000000dbf6233cd50c67bf876c89be5b8b05bce0eb833b9eef913c9588103d4fa3c3bb69508f3c0000803f0000000000000000b429cc3c05e567bf5dea88be66a2dd3b449f3e3a3d129a3c9938153d031122bc296450bc0000803f00000000000000006bf1123d20d968bf3f0c8ebebb21913c9c7244bb41e80f3c6efe843caa6003bca15511bd0000803f0000000000000000e84b153d265a69bf85d095beb5d6953cbcbca2bbf340d1bb83b85cbc1fd6bdbaa96f19bd0000803f0000000000000000c586d73c851c69bf7baa9bbe548b053cdeeb83bba0ef91bc978810bd56a3c33b62508fbc0000803f000000000000000002b13a3c554468bfa52c9cbe69a2ddbb3c9f3eba3d129abc993815bd0311223c2c64503c0000803f0000000000000000d0852d3d467a2dbf986aaabeec4de3bb9bb714bb808a98bc4f4618bd6099cf3ababe5f3c0000803f00000000000000006107ff3cae292dbf1a21a5bebbd794bc903f88ba31e507bcc8b687bc3be78c3bd26f123d0000803f0000000000000000c733fa3c2eb12cbfc35a9dbe55ab99bc2280513a52cbe13bd33d613c155e933b1a28173d0000803f000000000000000050b2273d5c572cbf7ea597bef8f408bc9a310e3b27c7933cec7d133d0103073b76a9863c0000803f00000000000000004c59663dd6502cbf485997bef04de33b9bb7143b808a983c4f46183d6499cfbabebe5fbc0000803f0000000000000000b62d8a3d6ea12cbfc7a29cbebbd7943c8d3f883a2ee5073cc5b6873c3be78cbbd26f12bd0000803f00000000000000009c628b3dee192dbf1d69a4be55ab993c218051ba50cbe1bbd13d61bc155e93bb1a2817bd0000803f0000000000000000cb2c6c3dc0732dbf631eaabef3f4083c9b310ebb29c793bcee7d13bdfd0207bb71a986bc0000803f0000000000000000d0852d3d467a2dbf986aaabef44de3bb9bb714bb808a98bc4f4618bd6899cf3ac2be5f3c0000803f00000000000000009c612c3c1270e5be7ca8b8be3571ddbbf8bb79bbc50297bc861715bdaeb1dbbbf355713c0000803f0000000000000000001cddb9c215e6be6137b3be8b0191bc184aa6bb45c4ffbbfae084bc391c243ad200153d0000803f0000000000000000208682bacf35e5bef96eabbe7db595bc709a5cbba655f23b8e875c3c76b4f83b6f63163d0000803f000000000000000073ac153c6753e3be65dea5bec36d05bc24caa439b09e953c8a68103da39a253c66b67e3c0000803f000000000000000069e9c43c2289e1be24c8a5be3971dd3bf9bb793bc402973c8517153dabb1db3bf75571bc0000803f000000000000000053470f3d72e3e0be3f39abbe8b01913c184aa63b3ec4ff3bf6e0843c521c24bad20015bd0000803f00000000000000004ca1113d65c3e1bea701b3be7db5953c729a5c3ba555f2bb8d875cbc75b4f8bb6f6316bd0000803f0000000000000000f943d03ccda5e3be3b92b8bebc6d053c5ccaa4b9b29e95bc8c6810bda39a25bc58b67ebc0000803f000000000000000098612c3c1270e5be7ca8b8be3c71ddbbfbbb79bbc40297bc851715bdaab1dbbbfa55713c0000803f0000000000000000fc2687bd57f75ebe5af5c6be18e0d7bbcd9b90bb9c6996bcb7f211bd23a623bc2ecd783c0000803f000000000000000030009dbd3e4261bec274c1bed45c8dbc94f8d9bb7080f9bb0d1482bce46a57ba0b57163d0000803f0000000000000000a8259ebdaa8f5fbe8babb9beb7f291bc22a6a3bb2ccdf83b17e0573ccc9b103c9d69163d0000803f00000000000000007ceb89bd2ede5abe4f29b4be0c1402bcd76ad7b90b57963cd45c0d3d93f8593c6f80793c0000803f0000000000000000f25558bd9bed55be2628b4be1ce0d73bcd9b903b9b69963cb6f2113d21a6233c32cd78bc0000803f00000000000000008aa32cbdb4a253bebea8b9bed65c8d3c94f8d93b6980f93b0a14823cb26a573a0d5716bd0000803f00000000000000009a582abd485555bef571c1beb7f2913c22a6a33b2bcdf8bb16e057bccc9b10bc9d6916bd0000803f0000000000000000f4cc52bdc4065abe31f4c6be0614023c856ad7390d5796bcd65c0dbd94f859bc628079bc0000803f0000000000000000fc2687bd57f75ebe5af5c6be1ee0d7bbcf9b90bb9b6996bcb6f211bd21a623bc34cd783c0000803f0000000000000000284612be3cd5623c4c55d5be4171ddbbaabb79bbc60297bc851715bdcfb1dbbbf855713c0000803f0000000000000000cf7a1dbe221f4e3c31e4cfbe8b0191bc094aa6bb45c4ffbbf4e084bcb819243ad200153d0000803f00000000000000004d111ebe811d6a3cc91bc8be7bb595bc939a5cbbaa55f23b9a875c3c27b4f83b6f63163d0000803f00000000000000007ab113be3235933c358bc2bebd6d05bca9c7a439b19e953c8b68103d929a253c66b67e3c0000803f0000000000000000146f04be88d9af3cf474c2be4571dd3babbb793bc502973c8417153dcdb1db3bfc5571bc0000803f0000000000000000d974f2bd9534ba3c0fe6c7be8d01913c094aa63b3ec4ff3bf1e0843ce01924bad40015bd0000803f0000000000000000dd47f1bd6635ac3c77aecfbe7bb5953c949a5c3ba955f2bb99875cbc27b4f8bb6f6316bd0000803f0000000000000000c30303bef30e8e3c0b3fd5beb76d053ce1c7a4b9b39e95bc8d6810bd939a25bc5ab67ebc0000803f0000000000000000284612be3bd5623c4c55d5be4771ddbbacbb79bbc50297bc841715bdccb1dbbbfe55713c0000803f00000000000000004e3f33be685e7c3e27c4e3bef44de3bb9bb714bb808a98bc4f4618bd6599cf3ac2be5f3c0000803f0000000000000000d6bf3ebec7a07d3ea87adebebcd794bc8e3f88ba2ee507bcc5b687bc3ce78c3bd36f123d0000803f0000000000000000485a3fbec6827f3e52b4d6be54ab99bc2680513a58cbe13bd93d613c145e933b1928173d0000803f00000000000000002db434be0675803e0dffd0bef6f408bc9a310e3b27c7933cec7d133d0103073b74a9863c0000803f00000000000000006e0a25be1282803ed7b2d0bef84de33b9bb7143b7f8a983c4e46183d6999cfbac6be5fbc0000803f0000000000000000e68919bec5c17f3e56fcd5bebcd7943c8a3f883a2ae5073cc1b6873c3ce78cbbd36f12bd0000803f000000000000000074ef18bec6df7d3eacc2ddbe54ab993c258051ba57cbe1bbd83d61bc145e93bb192817bd0000803f00000000000000008f9523be80787c3ef277e3beeff4083c9b310ebb29c793bcee7d13bdfa0207bb6da986bc0000803f00000000000000004e3f33be685e7c3e27c4e3befc4de3bb9ab714bb7f8a98bc4e4618bd6d99cf3acabe5f3c0000803f0000000000000000312e13be9157f53e1333f2be6aa2ddbb549f3eba3d129abc983815bd1211223c2a64503c0000803f000000000000000055651ebec63ff73e3111edbeba2191bcab72443b41e80fbc6cfe84bcb660033ca055113d0000803f0000000000000000f4fb1ebed441f83eeb4ce5beb4d695bccbbca23bf840d13b8ab85c3c2ad6bd3aa96f193d0000803f0000000000000000d39914be91c6f73ef572dfbe568b05bcebeb833b9eef913c9588103d62a3c3bb66508f3c0000803f00000000000000000b5405be3116f63ecbf0debe6ea2dd3b4d9f3e3a3d129a3c9838153d131122bc2e6450bc0000803f0000000000000000cd39f4bdfc2df43ead12e4bebb21913cae7244bb3ee80f3c69fe843cb56003bca15511bd0000803f00000000000000008f0cf3bdee2bf33ef3d6ebbeb4d6953ccbbca2bbf740d1bb89b85cbc2cd6bdbaa96f19bd0000803f000000000000000069e803be31a7f33ee9b0f1be508b053ce9eb83bba0ef91bc978810bd68a3c33b60508fbc0000803f0000000000000000322e13be9157f53e1333f2be70a2ddbb459f3eba3c129abc973815bd1211223c3164503c0000803f0000000000000000e0989abd4a85333fc5edfbbe29b36abc34b322bcbdae20bc1a198cbbebf8153ca12746bb0000803f00000000000000002dbf9dbd6268373fbc88fcbec9f281bc9825ac3bab0d34bc84e5173b44b5263cd40ac73a0000803f0000000000000000abdd8dbdcb813a3febd7f9be85d904bc8f368e3c1be7bbbb5181f73bb593ab3b1273a93b0000803f0000000000000000bf8368bdc1003b3fd26ef5beb209903b3e159e3c8abe3c3bd509093c118a35bb8de0bd3b0000803f00000000000000002ad83fbde49a383fd9e2f1be2ab36a3c32b3223cbdae203c18198c3becf815bc9e27463b0000803f0000000000000000908b39bdccb7343fe247f1bec9f2813ca025acbbab0d343c8be517bb44b526bcde0ac7ba0000803f0000000000000000944e59bd639e313fb3f8f3be86d9043c8f368ebc1ce7bb3b5181f7bbb693abbb1273a9bb0000803f0000000000000000164386bd6d1f313fcc61f8bebd0990bb3e159ebc98be3cbbd50909bc1f8a353b8de0bdbb0000803f0000000000000000e0989abd4a85333fc5edfbbe2ab36abc30b322bcbeae20bc17198cbbecf8153c9c2746bb0000803f000000000000000019b7abbda273e83e9b7a11bf77baa3bce22205386d51413a03d5b9ba559d0d3c7fe91ebd0000803f000000000000000049c2a0bd3e05ea3ed31015bf70ce6fbcabe24a3b097959bcac05de3c89cfc63b133be9bc0000803f0000000000000000433e84bd29a9ea3e7aa916bf1de43abaea6b8e3b54d19fbcf6cc223d7c6084b8fb38c0ba0000803f000000000000000092be4dbd5cffe93e2c5515bf92495f3c8af1473b538f6abc9272ee3c5ebcc9bb923dd83c0000803f0000000000000000bab333bd506be83e43db11bf77baa33c4b2305b84f5141bae5d4b93a559d0dbc7fe91e3d0000803f00000000000000005a9d49bdb4d9e63e0b450ebf6ece6f3caee24abb0b79593cae05debc87cfc6bb113be93c0000803f0000000000000000b35281bdc935e63e64ac0cbf29e43a3aea6b8ebb54d19f3cf6cc22bd536084380639c03a0000803f0000000000000000aeb19ebd96dfe63eb2000ebf97495fbc86f147bb4e8f6a3c8d72eebc62bcc93b973dd8bc0000803f000000000000000019b7abbda273e83e9b7a11bf77baa3bcb32305383251413ac7d4b9ba559d0d3c7fe91ebd0000803f0000000000000000c485b0bd92d4493e18e618bf26b9a3bc00d5cd38473a443a0019c0ba4a4b933b05b122bd0000803f00000000000000006a98a5bda56d4b3ec98c1cbf7c0770bcdb66d93a8a685dbccd0cdf3c7735473badc0eebc0000803f0000000000000000ad1789bd04084c3eaf2c1ebf001940ba444b133b04b1a2bc25b9233d5ad44db9453ac4ba0000803f0000000000000000c26b57bd42494b3e2ad21cbfce0c5f3c6735c73aabc06ebc7a07f03cda6659bb8b68dd3c0000803f000000000000000063523dbd1ca1493e364819bf26b9a33c1bd5cdb82a3a44bae318c03a4a4b93bb05b1223d0000803f0000000000000000182d53bd0908483e85a115bf7907703cdc66d9ba8e685d3cd10cdfbc743547bbaac0ee3c0000803f0000000000000000491786bdaa6d473e9f0114bf0b19403a444b13bb04b1a23c25b923bd50d44d39503ac43a0000803f00000000000000001579a3bd6c2c483e245c15bfd30c5fbc6235c7baa6c06e3c7507f0bcde66593b9068ddbc0000803f0000000000000000c485b0bd92d4493e18e618bf26b9a3bc35d5cd380b3a443ac418c0ba494b933b05b122bd0000803f0000000000000000c454b5bd663e75bd505220bf26b9a3bc00d5cd38473a443aa818c0ba0854933be0b022bd0000803f00000000000000006a67aabd19da6ebd01f923bf7c0770bcdb66d93a8a685dbc6d0cdf3cdd03463bf5c4eebc0000803f0000000000000000ade68dbd9c706cbde79825bf001940ba444b133b04b1a2bcdeb8233d3bef69b9b99fc4ba0000803f0000000000000000c20961bda56b6fbd623e24bfce0c5f3c6735c73aabc06ebc1207f03c31b15abbdc63dd3c0000803f000000000000000063f046bd3b0c76bd6eb420bf26b9a33c1bd5cdb82a3a44ba8b18c03a085493bbe0b0223d0000803f000000000000000018cb5cbd87707cbdbd0d1dbf7907703cdc66d9ba8e685d3c710cdfbcda0346bbf2c4ee3c0000803f000000000000000049e68abd04da7ebdd76d1bbf0b19403a444b13bb04b1a23cdeb823bd31ef6939c49fc43a0000803f00000000000000001548a8bdfbde7bbd5cc81cbfd30c5fbc6235c7baa6c06e3c0d07f0bc35b15a3be163ddbc0000803f0000000000000000c454b5bd653e75bd505220bf26b9a3bc35d5cd380b3a443a6c18c0ba0854933be0b022bd0000803f0000000000000000c4dababd6639a2be8fbe27bf26b9a3bc00d5cd38473a443a501840bacc5c133bbcb0a2bc0000803f00000000000000006aedafbddc6ca1be40652bbf7c0770bcdb66d93a8a685dbc0c0c5f3c49d2c43a3cc96ebc0000803f0000000000000000ad6c93bdac1fa1be26052dbf001940ba444b133b04b1a2bc98b8a33c100503b92d0545ba0000803f0000000000000000c2156cbd0e7fa1bea1aa2bbfce0c5f3c6735c73aabc06ebcaa06703c8ffbdbba2c5f5d3c0000803f000000000000000063fc51bd2053a2bead2028bf26b9a33c1bd5cdb82a3a44ba3318403acc5c13bbbcb0a23c0000803f000000000000000018d767bdaa1fa3befc7924bf7907703cdc66d9ba8e685d3c100c5fbc46d2c4ba3ac96e3c0000803f0000000000000000496c90bdda6ca3be16da22bf0b19403a444b13bb04b1a23c98b8a3bc0b0503393805453a0000803f000000000000000015ceadbd780da3be9b3424bfd30c5fbc6235c7baa6c06e3ca50670bc93fbdb3a315f5dbc0000803f0000000000000000c4dababd6639a2be8fbe27bf26b9a3bc35d5cd380b3a443a141840bacc5c133bbcb0a2bc0000803f0000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: -0.05940433, y: -0.20697698, z: -0.45759854}
+    m_Extent: {x: 0.1274635, y: 0.9374572, z: 0.21826127}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1647523039
 GameObject:
   m_ObjectHideFlags: 0
@@ -16651,7 +16983,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647523039}
   m_LocalRotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1835, y: 1.2968, z: 0.3271}
+  m_LocalPosition: {x: 0.1835, y: 1.2968, z: 0.37}
   m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 0.099999994}
   m_Children:
   - {fileID: 2140959607}
@@ -16760,7 +17092,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 1, z: 2}
+  m_Size: {x: 2, y: 1, z: 0.61}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1647523044
 MeshRenderer:
@@ -17243,26 +17575,50 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
-        m_MethodName: ChooseNumber
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10000
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalPayment
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalOilInputTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -17552,14 +17908,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -2
+          m_IntArgument: -7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -17715,14 +18071,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -2
+          m_IntArgument: -1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -17856,7 +18212,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748670397}
-  m_Mesh: {fileID: 2092761171}
+  m_Mesh: {fileID: 312456468}
 --- !u!114 &1748670401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20973,26 +21329,50 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
-        m_MethodName: ChooseNumber
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 80000
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: ChooseNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30000
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalPayment
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1476269236}
+        m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
+        m_MethodName: CalOilInputTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -21395,170 +21775,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090524777}
   m_CullTransparentMesh: 1
---- !u!43 &2092761171
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: cable
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 576
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 117
-    localAABB:
-      m_Center: {x: -0.07315033, y: -0.2072916, z: -0.4576496}
-      m_Extent: {x: 0.12046289, y: 0.93740666, z: 0.21821825}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 0
-  m_KeepIndices: 0
-  m_IndexFormat: 1
-  m_IndexBuffer: 000000000100000009000000010000000a0000000900000001000000020000000a000000020000000b0000000a00000002000000030000000b000000030000000c0000000b00000003000000040000000c000000040000000d0000000c00000004000000050000000d000000050000000e0000000d00000005000000060000000e000000060000000f0000000e00000006000000070000000f00000007000000100000000f000000070000000800000010000000080000001100000010000000090000000a000000120000000a00000013000000120000000a0000000b000000130000000b00000014000000130000000b0000000c000000140000000c00000015000000140000000c0000000d000000150000000d00000016000000150000000d0000000e000000160000000e00000017000000160000000e0000000f000000170000000f00000018000000170000000f0000001000000018000000100000001900000018000000100000001100000019000000110000001a0000001900000012000000130000001b000000130000001c0000001b00000013000000140000001c000000140000001d0000001c00000014000000150000001d000000150000001e0000001d00000015000000160000001e000000160000001f0000001e00000016000000170000001f00000017000000200000001f000000170000001800000020000000180000002100000020000000180000001900000021000000190000002200000021000000190000001a000000220000001a00000023000000220000001b0000001c000000240000001c00000025000000240000001c0000001d000000250000001d00000026000000250000001d0000001e000000260000001e00000027000000260000001e0000001f000000270000001f00000028000000270000001f0000002000000028000000200000002900000028000000200000002100000029000000210000002a0000002900000021000000220000002a000000220000002b0000002a00000022000000230000002b000000230000002c0000002b00000024000000250000002d000000250000002e0000002d00000025000000260000002e000000260000002f0000002e00000026000000270000002f00000027000000300000002f000000270000002800000030000000280000003100000030000000280000002900000031000000290000003200000031000000290000002a000000320000002a00000033000000320000002a0000002b000000330000002b00000034000000330000002b0000002c000000340000002c00000035000000340000002d0000002e000000360000002e00000037000000360000002e0000002f000000370000002f00000038000000370000002f0000003000000038000000300000003900000038000000300000003100000039000000310000003a0000003900000031000000320000003a000000320000003b0000003a00000032000000330000003b000000330000003c0000003b00000033000000340000003c000000340000003d0000003c00000034000000350000003d000000350000003e0000003d00000036000000370000003f00000037000000400000003f000000370000003800000040000000380000004100000040000000380000003900000041000000390000004200000041000000390000003a000000420000003a00000043000000420000003a0000003b000000430000003b00000044000000430000003b0000003c000000440000003c00000045000000440000003c0000003d000000450000003d00000046000000450000003d0000003e000000460000003e00000047000000460000003f0000004000000048000000400000004900000048000000400000004100000049000000410000004a0000004900000041000000420000004a000000420000004b0000004a00000042000000430000004b000000430000004c0000004b00000043000000440000004c000000440000004d0000004c00000044000000450000004d000000450000004e0000004d00000045000000460000004e000000460000004f0000004e00000046000000470000004f00000047000000500000004f000000480000004900000051000000490000005200000051000000490000004a000000520000004a00000053000000520000004a0000004b000000530000004b00000054000000530000004b0000004c000000540000004c00000055000000540000004c0000004d000000550000004d00000056000000550000004d0000004e000000560000004e00000057000000560000004e0000004f000000570000004f00000058000000570000004f000000500000005800000050000000590000005800000051000000520000005a000000520000005b0000005a00000052000000530000005b000000530000005c0000005b00000053000000540000005c000000540000005d0000005c00000054000000550000005d000000550000005e0000005d00000055000000560000005e000000560000005f0000005e00000056000000570000005f00000057000000600000005f0000005700000058000000600000005800000061000000600000005800000059000000610000005900000062000000610000005a0000005b000000630000005b00000064000000630000005b0000005c000000640000005c00000065000000640000005c0000005d000000650000005d00000066000000650000005d0000005e000000660000005e00000067000000660000005e0000005f000000670000005f00000068000000670000005f0000006000000068000000600000006900000068000000600000006100000069000000610000006a0000006900000061000000620000006a000000620000006b0000006a00000063000000640000006c000000640000006d0000006c00000064000000650000006d000000650000006e0000006d00000065000000660000006e000000660000006f0000006e00000066000000670000006f00000067000000700000006f000000670000006800000070000000680000007100000070000000680000006900000071000000690000007200000071000000690000006a000000720000006a00000073000000720000006a0000006b000000730000006b0000007400000073000000
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 117
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 40
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 5616
-    _typelessdata: ed69bcbd30a291bf83d38dbe55cbe0bbe17a9f3820e699bc657d90bc56cbe03bf0f5d33b0000803f000000000000000057d7d1bdf70391bfc8aa88be7be88dbc30b7a03bdfb40ebcb3b9f9bb08319d3bee4a923c0000803f0000000000000000917cd2bde3c390bf49e580be657d90bc55cbe03bf2f5d33b57cbe03b227b9fb820e6993c0000803f0000000000000000d3f8bdbd7d0791bfe42076beb3b9f9bb08319d3bee4a923c7be88d3c31b7a0bbdfb40e3c0000803f00000000000000008250a0bd2ca791bf7e2d75be59cbe03b347b9fb820e6993c657d903c56cbe0bbf5f5d3bb0000803f000000000000000019e38abd654592bff47e7fbe7be88d3c32b7a0bbdcb40e3cadb9f93b06319dbbee4a92bc0000803f0000000000000000df3d8abd798592bff98487be657d903c55cbe0bbf0f5d3bb55cbe0bbf97a9f3820e699bc0000803f00000000000000009ec19ebddf4192bfd0598dbea5b9f93b05319dbbef4a92bc7ce88dbc34b7a03bd8b40ebc0000803f0000000000000000ee69bcbd30a291bf83d38dbe5ccbe0bb867b9f3820e699bc657d90bc56cbe03bf8f5d33b0000803f0000000000000000861d54bcde8368bfee1f9cbea7cfe6bb49ce0fbad54699bcb8c313bdc3342b3cb67d593c0000803f00000000000000001b13c2bc368667bfeee796be42b891bcdcb3593b938d0bbce0677fbc28b8053c3362123d0000803f00000000000000001fbbc4bc160867bff0218fbe466094bc2aeaab3b2764da3b1cdc653c86368f3a18a5183d0000803f0000000000000000eef060bc5e5367bfac5b89be3c3b00bcd745863b4dfd923c801e113d26ced8bb50fa8a3c0000803f00000000000000001891953af63b68bf14f788beabcfe63b42ce0f3ad546993cb8c3133dc4342bbcba7d59bc0000803f0000000000000000d2ba423c9e3969bf152f8ebe42b8913ce0b359bb8f8d0b3cd8677f3c26b805bc346212bd0000803f0000000000000000da0a483cbeb769bf12f595be4660943c2aeaabbb2664dabb1bdc65bc88368fba18a518bd0000803f00000000000000001c2cfc3a766c69bf56bb9bbe363b003cd44586bb4ffd92bc821e11bd2cced83b4afa8abc0000803f00000000000000008a1d54bcde8368bfee1f9cbeaecfe6bb39ce0fbad44699bcb7c313bdc3342b3cbd7d593c0000803f0000000000000000de85af3c63dd2dbfe75caabe2a7dedbb5fdf0cbb6baf97bcbe4d17bdcb2d103b07b5683c0000803f0000000000000000d4e3293cb0802dbfd6fda4be3ff395bc37ae40bac87c03bcd0c582bcd0ae953be66b133d0000803f00000000000000006069243cc4072dbf96369dbe79b098bcd67f913a9dd6ea3b6e556b3c16988b3b054f163d0000803f0000000000000000f6e8a83c76b92cbf989597be67f803bcc00d173b87c5943ce196143d95eebe3a4d4b823c0000803f00000000000000003a22133da5c32cbff96697be2e7ded3b5edf0c3b6baf973cbe4d173dcd2d10bb0bb568bc0000803f0000000000000000346c403d58202dbf0ac69cbe3ff3953c30ae403ac47c033cccc5823cd0ae95bbe66b13bd0000803f0000000000000000d1ca413d44992dbf4a8da4be79b0983cd67f91ba9cd6eabb6d556bbc16988bbb054f16bd0000803f0000000000000000ad70163d92e72dbf492eaabe61f8033cc10d17bb89c594bce39614bd89eebeba474b82bc0000803f0000000000000000dd85af3c63dd2dbfe75caabe307dedbb5edf0cbb6baf97bcbe4d17bdce2d103b0db5683c0000803f0000000000000000e12be5bb1803e6bed099b8be7e2ce8bbcb1a76bb021896bc1ea414bd1a50c6bbeb3f7a3c0000803f00000000000000001ad591bc8b8ce6beb013b3be419592bc5e6a9dbbfbd7f6bb747680bc744e843ae5ee153d0000803f0000000000000000728194bc26a5e5be2c4babbe994195bc332247bb1349fb3b8637673c1d17f53ba179153d0000803f000000000000000081fcfebb75d4e3be74cfa5be8ffe00bcaeda043ac18d963c96fa113d46c41c3c83d3753c0000803f00000000000000001f2deb3bac2ae2bed0d6a5be822ce83bcc1a763b0118963c1da4143d1850c63bef3f7abc0000803f00000000000000006955933c39a1e1bef05cabbe4295923c5e6a9d3bf3d7f63b7076803c854e84bae6ee15bd0000803f0000000000000000c001963c9e88e2be7425b3be9941953c3422473b1249fbbb853767bc1d17f5bba17915bd0000803f0000000000000000d77e023c4f59e4be2ca1b8be89fe003ccada04bac28d96bc97fa11bd45c41cbc77d375bc0000803f0000000000000000e82be5bb1803e6bed099b8be852ce8bbce1a76bb011896bc1da414bd1750c6bbf33f7a3c0000803f0000000000000000c0faa3bdfbfe5ebe4be6c6be98b0e2bb33ab8fbbb77895bccfb611bd1fd518bca7db803c0000803f0000000000000000af96b9bde50e61bee550c1bee01b8fbc74a8d1bb5e89f0bb07d97bbc215acfb92240173d0000803f00000000000000006a3dbabd4a485fbee387b9becdb691bc1cd598bba8db003c9ab0623c34ab0f3cb678153d0000803f0000000000000000478da5bd77b55abebe1ab4be05d9fbbbeb594fb92340973ce11b0f3d76a8513c5d89703c0000803f0000000000000000ada487bd470456be3537b4be9cb0e23b34ab8f3bb678953cceb6113d1ed5183ca9db80bc0000803f00000000000000007e1164bd5df453be9bccb9bee01b8f3c74a8d13b5889f03b01d97b3ce759cf39224017bd0000803f000000000000000008c462bdf8ba55be9d95c1becdb6913c1dd5983ba7db00bc98b062bc33ab0fbcb67815bd0000803f0000000000000000281286bdcb4d5abec202c7bef7d8fb3b5c594f39244097bce21b0fbd76a851bc4e8970bc0000803f0000000000000000c1faa3bdfbfe5ebe4be6c6be9eb0e2bb35ab8fbbb67895bcceb611bd1ed518bcabdb803c0000803f000000000000000040291dbe7f21753ca046d5be862ce8bb9b1a76bb021896bc19a414bd8050c6bbf23f7a3c0000803f0000000000000000843a28beedf2633c80c0cfbe409592bc726a9dbbf7d7f6bb6c7680bcc44c843ae5ee153d0000803f00000000000000000f9028bec06f803cfcf7c7be974195bc9c2247bb1c49fb3b8c37673ced16f53ba179153d0000803f0000000000000000c5f71dbedb7a9d3c447cc2be89fe00bcfdd8043ac48d963c95fa113d5ac41c3c7ed3753c0000803f000000000000000078a60ebe6617b83ca083c2be8a2ce83b9c1a763b0218963c19a4143d7f50c63bf63f7abc0000803f0000000000000000349503beb0aec03cc009c8be4195923c726a9d3befd7f63b6876803cd54c84bae6ee15bd0000803f0000000000000000a93f03be6738b23c44d2cfbe9741953c9d22473b1b49fbbb8a3767bced16f5bba17915bd0000803f0000000000000000f4d70dbe4a2d953cfc4dd5be82fe003c17d904bac58d96bc96fa11bd59c41cbc70d375bc0000803f000000000000000040291dbe7f21753ca046d5be8c2ce8bb9d1a76bb021896bc19a414bd7f50c6bbf83f7a3c0000803f000000000000000066983abe480b7e3e76b6e3be307dedbb60df0cbb6baf97bcbe4d17bdc62d103b0cb5683c0000803f0000000000000000e4ea45be187e7f3e6557debe40f395bc40ae40bac47c03bcccc582bccfae953be66b133d0000803f00000000000000008b4246bee3b0803e2490d6be79b098bcd47f913aa5d6ea3b75556b3c18988b3b044f163d0000803f0000000000000000026c3bbe7e4d813e27efd0be64f803bcc00d173b87c5943ce096143da1eebe3a494b823c0000803f000000000000000092c02bbe2239813e88c0d0be347ded3b5fdf0c3b6aaf973cbd4d173dc82d10bb10b568bc0000803f0000000000000000146e20beba7f803e991fd6be40f3953c39ae403ac07c033cc8c5823ccfae95bbe66b13bd0000803f00000000000000006d1620bec61b7f3edae6ddbe79b0983cd37f91baa3d6eabb73556bbc18988bbb044f16bd0000803f0000000000000000f6ec2abe8fe27d3ed887e3be5ff8033cc10d17bb8ac594bce39614bd96eebeba444b82bc0000803f000000000000000066983abe490b7e3e76b6e3be377dedbb5fdf0cbb6aaf97bcbd4d17bdc92d103b13b5683c0000803f0000000000000000f9fa16be4af6f53e5c26f2beaccfe6bb4ece0fbad44699bcb5c313bdce342b3cb87d593c0000803f000000000000000084fb21be99f1f73e5ceeecbe42b891bcf0b3593b908d0bbcd5677fbc30b8053c3362123d0000803f0000000000000000855022bedaedf83e5e28e5be466094bc38eaab3b2c64da3b22dc653c8f368f3a18a5183d0000803f000000000000000030c817be4957f83e1a62dfbe393b00bce145863b4efd923c801e113d35ced8bb4efa8a3c0000803f0000000000000000fe8d08be1886f63e82fddebeb0cfe63b46ce0f3ad446993cb5c3133dce342bbcbc7d59bc0000803f0000000000000000e71afbbdc98af43e8335e4be43b8913cf3b359bb8d8d0b3ccf677f3c2fb805bc346212bd0000803f0000000000000000e670fabd888ef33e80fbebbe4660943c38eaabbb2b64dabb21dc65bc91368fba18a518bd0000803f0000000000000000c9c007be1a25f43ec4c1f1be333b003cdf4586bb4ffd92bc811e11bd3aced83b48fa8abc0000803f0000000000000000fafa16be4af6f53e5c26f2beb3cfe6bb3ece0fbad44699bcb5c313bdcf342b3cbf7d593c0000803f0000000000000000e0f29abd0fb0333f282dfcbe49836dbced1c16bc1d9b28bcd2177fbb76e31b3cd5d043bb0000803f0000000000000000a0c89cbda797373f70a7fcbe45317cbc2592c73b30e437bc8236333b0b0c273ccc9be93a0000803f0000000000000000fb268cbd6f953a3ff4c3f9be4348eebb8f9d913c55e9b6bbeb44fe3b0cb4a03b4180b43b0000803f00000000000000000a9865bdd2e83a3fe233f5be2067a73be4099c3cb0365a3b04fe063c86a655bb63ddc43b0000803f00000000000000001c243fbdf760383f76a3f1be4a836d3ceb1c163c1d9b283ccf177f3b76e31bbcd2d0433b0000803f00000000000000009e783bbd5f79343f2e29f1be42317c3c2d92c7bb2fe4373c893633bb090c27bcd69be9ba0000803f0000000000000000e5bb5cbd977b313faa0cf4be4548ee3b8f9d91bc57e9b63beb44febb0db4a0bb4180b4bb0000803f0000000000000000eab887bd3428313fbd9cf8be2b67a7bbe2099cbcc1365abb02fe06bc95a6553b60ddc4bb0000803f0000000000000000e0f29abd0fb0333f282dfcbe4a836dbce91c16bc1e9b28bccb177fbb77e31b3cd0d043bb0000803f0000000000000000cbdfabbdcc8be83e39ca11bf50c6a3bc2d4b9e392151fab9f48f8a3a724a0d3c1dfa1ebd0000803f0000000000000000bc1c9fbd1d12ea3e7f4915bf297461bc12f2563be7a367bc5b6cec3c3ee7b93bd553dbbc0000803f000000000000000082d781bd9b9cea3e00aa16bf635a0b3a9c188e3b19e29fbcb0d8223daf651dba63e6783a0000803f0000000000000000176b4abd26dae93e3f1d15bf5cc56d3c85f63a3be5935cbc0e2de03c3abad5bbd053e63c0000803f000000000000000046f933bda63ce83ea58b11bf50c6a33c3a4b9eb95c51fa3912908aba724a0dbc1dfa1e3d0000803f0000000000000000647f4dbd55b6e63e5f0c0ebf2674613c14f256bbeaa3673c5e6cecbc3be7b9bbd353db3c0000803f0000000000000000ec0484bdd72be63edeab0cbf585a0bba9c188ebb19e29f3cb0d822bdab651d3a4ee678ba0000803f0000000000000000e3a6a0bd4ceee63ea0380ebf60c56dbc7ef63abbe0935c3c092de0bc3dbad53bd453e6bc0000803f0000000000000000cbdfabbdcc8be83e39ca11bf50c6a3bc474b9e399751fab930908a3a724a0d3c1dfa1ebd0000803f00000000000000006289b0bd8be8493e343719bfacc7a3bcde8f7339cf3500ba6739863a3ba2923be9c122bd0000803f00000000000000007acda3bd73754b3e83c61cbf19b061bc3ee6e43a0bd76bbc428ded3ce0d7393bf481e0bc0000803f0000000000000000048b86bd30f64b3e362d1ebfa639063a39a2123bebc1a2bcacc7233d1f90f3b90b36803a0000803f00000000000000009ecb53bd571f4b3e2f991cbf428d6d3ce2d7b93af98160bc1bb0e13c45e664bb08d7eb3c0000803f0000000000000000184b3dbdc36e493e1af718bfacc7a33cec8f73b9ed35003a863986ba3ba292bbe9c1223d0000803f0000000000000000e8c256bddae1473ecb6715bf17b0613c40e6e4ba0cd76b3c448dedbcded739bbf281e03c0000803f0000000000000000eaa388bd1e61473e180114bf9b3906ba39a212bbebc1a23cacc723bd1a90f339003680ba0000803f00000000000000002049a5bdf737483e1f9515bf478d6dbcded7b9baf481603c16b0e1bc49e6643b0dd7ebbc0000803f00000000000000006289b0bd8be8493e353719bfacc7a3bcf98f73390a3600baa339863a3ba2923be9c122bd0000803f0000000000000000a232b5bdc0d074bd6ca320bfacc7a3bcde8f7339cf3500ba1c39863ab49a923bfbc122bd0000803f0000000000000000ba76a8bd1e9d6ebdbb3224bf19b061bc3ee6e43a0bd76bbcb38ced3cce0b383b6588e0bc0000803f000000000000000044348bbd2c9a6cbd6e9925bfa639063a39a2123bebc1a2bc49c7233d5fb603ba234d7f3a0000803f00000000000000001e1e5dbd91f56fbd670524bf428d6d3ce2d7b93af98160bc92afe13c0a9d66bbcad0eb3c0000803f0000000000000000989d46bde0b776bd526320bfacc7a33cec8f73b9ed35003a3a3986bab39a92bbfbc1223d0000803f0000000000000000681560bd82eb7cbd03d41cbf17b0613c40e6e4ba0cd76b3cb48cedbccc0b38bb6388e03c0000803f00000000000000002a4d8dbd74ee7ebd506d1bbf9b3906ba39a212bbebc1a23c49c723bd5db6033a0e4d7fba0000803f000000000000000060f2a9bd0f937bbd57011dbf478d6dbcded7b9baf481603c8dafe1bc0f9d663bcfd0ebbc0000803f0000000000000000a232b5bdc0d074bd6da320bfacc7a3bcf98f73390a3600ba5739863ab39a923bfbc122bd0000803f000000000000000062debabdd127a2beab0f28bfacc7a3bcde8f7339cf3500bacf38063a2793123b0cc2a2bc0000803f00000000000000007a22aebd5d61a1befa9e2bbf19b061bc3ee6e43a0bd76bbc228c6d3cb53fb63ad48e60bc0000803f000000000000000004e090bdff20a1bead052dbfa639063a39a2123bebc1a2bce4c6a33caaa48db9302efe390000803f00000000000000009e7568bd6b8ca1bea6712bbf428d6d3ce2d7b93af98160bc08af613cc853e8ba8bca6b3c0000803f000000000000000018f551bdb564a2be91cf27bfacc7a33cec8f73b9ed35003aee3806ba279312bb0cc2a23c0000803f0000000000000000e86c6bbd292ba3be424024bf17b0613c40e6e4ba0cd76b3c238c6dbcb33fb6bad28e603c0000803f0000000000000000eaf892bd876ba3be8fd922bf9b3906ba39a212bbebc1a23ce4c6a3bca8a48d391b2efeb90000803f0000000000000000209eafbd1b00a3be966d24bf478d6dbcded7b9baf481603c03af61bccc53e83a90ca6bbc0000803f000000000000000062debabdd127a2beac0f28bfacc7a3bcf98f73390a3600ba0b39063a2693123b0cc2a2bc0000803f0000000000000000
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: -0.07315033, y: -0.2072916, z: -0.4576496}
-    m_Extent: {x: 0.12046289, y: 0.93740666, z: 0.21821825}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &2128444786
 GameObject:
   m_ObjectHideFlags: 0
@@ -21642,7 +21858,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1476269236}
         m_TargetAssemblyTypeName: GasStationKiosk, Assembly-CSharp
         m_MethodName: OnOffKioskPanel
         m_Mode: 3
@@ -21716,7 +21932,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2140959606}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0.1, y: -0.05, z: -0.4}
+  m_LocalPosition: {x: 0.1, y: -0.139, z: -0.375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1647523040}
@@ -21882,34 +22098,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a9d08642fb4a4048a6defc0ddf5b8a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeOnStart: 1
-  fadeDuration: 3
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  colorPropertyName: _BaseColor
 --- !u!1 &125596664066011847
 GameObject:
   m_ObjectHideFlags: 0

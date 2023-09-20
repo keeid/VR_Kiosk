@@ -6,12 +6,14 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public int buildIndex = 0;
+    public int buildIndex = 1;
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            SmartSceneManager.singleton.GoToSceneAsync(buildIndex);
+            //SmartSceneManager.singleton.GoToScene(buildIndex);
+            SmartSceneManager.SceneTransitionToStore(buildIndex);
+            gameObject.SetActive(false);
         }
     }
 }

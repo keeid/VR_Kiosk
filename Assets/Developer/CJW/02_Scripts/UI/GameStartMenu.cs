@@ -52,7 +52,7 @@ public class GameStartMenu : MonoBehaviour
     public void StartGame()
     {
         HideAll();
-        SmartSceneManager.singleton.GoToSceneAsync(1);
+        SmartSceneManager.SceneTransitionToStore(0);
     }
 
     // 게임 종료
